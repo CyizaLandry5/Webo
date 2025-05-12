@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <style>
+
       .knowledge-grid {
         display: flex;
         flex-wrap: wrap;  /* Allows items to wrap naturally */
@@ -49,6 +50,50 @@
         .knowledge-grid li {
           flex: 1 1 100%; /* Single column for mobile */
         }
+      }
+
+      .quiz-embed {
+        display: none; /* Initially hide all quizzes */
+        margin-top: 20px;
+      }
+      
+      .quiz-embed h5 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      
+      .embed-responsive {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      .embed-responsive.embed-responsive-16by9 {
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      }
+      
+      .embed-responsive iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      
+      /* CSS target selectors:  Show the div when its id is the target of the URL */
+      #c-programming:target,
+      #iot:target,
+      #php:target,
+      #db:target,
+      #ml:target,
+      #python:target,
+      #python-ml:target {
+        display: block; /* Show the selected quiz */
       }
     </style>
 
@@ -1180,21 +1225,69 @@
       <h4>Let's make learning fun! <br> Pick a quiz and see how sharp your brain really is!</h4>
     </div>
 
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px;">
-      <a href="#" class="btn btn-outline-dark quiz-link">🧠 C Programming</a>
-      <a href="#" class="btn btn-outline-success quiz-link">📡 Internet of Things</a>
-      <a href="#" class="btn btn-outline-primary quiz-link">🌐 IoT Web App with PHP</a>
-      <a href="#" class="btn btn-outline-warning quiz-link">🗄️ Database Development</a>
-      <a href="#" class="btn btn-outline-info quiz-link">🤖 Machine Learning</a>
-      <a href="#" class="btn btn-outline-secondary quiz-link">🐍 Python Programming</a>
-      <a href="#" class="btn btn-outline-danger quiz-link">🧪 Python for ML</a>
+    <div id="quiz-list" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px;">
+      <a href="#c-programming" class="btn btn-outline-dark quiz-link">🧠 C Programming</a>
+      <a href="#iot" class="btn btn-outline-success quiz-link">📡 Internet of Things</a>
+      <a href="#php" class="btn btn-outline-primary quiz-link">🌐 IoT Web App with PHP</a>
+      <a href="#db" class="btn btn-outline-warning quiz-link">🗄️ Database Development</a>
+      <a href="#ml" class="btn btn-outline-info quiz-link">🤖 Machine Learning</a>
+      <a href="#python" class="btn btn-outline-secondary quiz-link">🐍 Python Programming</a>
+      <a href="#python-ml" class="btn btn-outline-danger quiz-link">🧪 Python for ML</a>
+    </div>
+
+    <div id="quiz-embed-container" style="margin-top: 30px;">
+      <div id="c-programming" class="quiz-embed">
+        <h5>C Programming Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <div id="iot" class="quiz-embed">
+        <h5>Internet of Things Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <div id="php" class="quiz-embed">
+        <h5>IoT Web App with PHP Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <div id="db" class="quiz-embed">
+        <h5>Database Development Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <div id="ml" class="quiz-embed">
+        <h5>Machine Learning Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://forms.gle/8podFJDNyDogA2hXA" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <div id="python" class="quiz-embed">
+        <h5>Python Programming Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
+      <div id="python-ml" class="quiz-embed">
+        <h5>Python for ML Quiz</h5>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-
-
-
-
 <!-- End of student Subpage -->
 
 
