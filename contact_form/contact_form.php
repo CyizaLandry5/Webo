@@ -1,99 +1,47 @@
 <?php
-include('db/db_connect.php');
-// // Database configuration
-// $servername = "localhost"; // or your database host
-// $username = "root"; // your database username
-// $password = ""; // your database password (leave empty if using default XAMPP)
-// $dbname = "landry"; // the name of your database (replace 'landry' with your actual database name)
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// Email configuration
-$from = 'info@cyizalandry.com'; // Replace it with your Hosting Admin email
-$sendTo = 'cyizalandry5@gmail.com'; // Replace it with your email
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // Fields mapping
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = 'There was an error while submitting the form. Please try again later.';
+// 1. Grab & sanitize POST data
+$name    = filter_input(INPUT_POST, 'name',    FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$email   = filter_input(INPUT_POST, 'email',   FILTER_VALIDATE_EMAIL);
+$subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-// // Create database connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
+if (!$name || !$email || !$subject || !$message) {
+    die('Please complete the form properly.');
+}
 
-// // Check for successful connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+// 2. Save to database
+$db = new mysqli('localhost', 'root', '', 'landry');  // ***UPDATE THESE***
+if ($db->connect_error) {
+    error_log('DB Connect Error: ' . $db->connect_error);
+    die('Database error.');
+}
+$stmt = $db->prepare(
+    "INSERT INTO messages (name, email, subject, message) VALUES (?, ?, ?, ?)"
+);
+$stmt->bind_param('ssss', $name, $email, $subject, $message);
+$stmt->execute();
+$stmt->close();
+$db->close();
 
-// Handle form submission
-if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
-    // Your site secret key
-    $secret = '6Le1l_QqAAAAAICyxI8a8jJs1fD-vT5tiVW2mU1v';
-    // Get verify response data from Google
-    $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-    curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
-    $verifyResponse = curl_exec($c);
-    $responseData = json_decode($verifyResponse);
+// 3. Send notification email
+$to      = 'cyizalandry5@gmail.com';  // ***UPDATE THIS***
+$headers = "From: {$name} <{$email}>\r\n"
+         . "Reply-To: {$email}\r\n"
+         . "Content-Type: text/plain; charset=UTF-8\r\n";
+$body    = "You’ve received a new contact message:\n\n"
+         . "Name: {$name}\n"
+         . "Email: {$email}\n"
+         . "Subject: {$subject}\n\n"
+         . "Message:\n{$message}\n";
 
-    if($responseData->success):
-        try {
-            // Collect form data
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $subject = $_POST['subject'];
-            $message = $_POST['message'];
-
-            // Insert form data into the database
-            $stmt = $conn->prepare("INSERT INTO form_submissions (name, email, subject, message) VALUES (?, ?, ?, ?)");
-            $stmt->bind_param("ssss", $name, $email, $subject, $message);
-            $stmt->execute();
-
-            // Prepare email content
-            $emailText = nl2br("You have new message from Contact Form\n");
-            foreach ($_POST as $key => $value) {
-                if (isset($fields[$key])) {
-                    $emailText .= nl2br("$fields[$key]: $value\n");
-                }
-            }
-
-            // Set email headers
-            $headers = array(
-                'Content-Type: text/html; charset="UTF-8";',
-                'From: ' . $from,
-                'Reply-To: ' . $from,
-                'Return-Path: ' . $from,
-            );
-
-            // Send email
-            mail($sendTo, $subject, $emailText, implode("\n", $headers));
-
-            // Success message
-            $responseArray = array('type' => 'success', 'message' => $okMessage);
-
-        } catch (\Exception $e) {
-            $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-        }
-
-        // Return response
-        if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-            $encoded = json_encode($responseArray);
-            header('Content-Type: application/json');
-            echo $encoded;
-        } else {
-            echo $responseArray['message'];
-        }
-
-    else:
-        // reCAPTCHA failed
-        $errorMessage = 'Robot verification failed, please try again.';
-        $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-        echo json_encode($responseArray);
-    endif;
-else:
-    // reCAPTCHA not checked
-    $errorMessage = 'Please click on the reCAPTCHA box.';
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-    echo json_encode($responseArray);
-endif;
-
-// Close database connection
-$conn->close();
+if (mail($to, "Contact Form: {$subject}", $body, $headers)) {
+    echo 'Thank you! Your message has been sent.';
+} else {
+    echo 'Oops—there was an error sending email.';
+}
 
 ?>
