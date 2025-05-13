@@ -530,7 +530,7 @@ input[type="submit"]:focus {
 }
 
 .animated-section {
-  position: absolute;
+  position: absolute; 
   background-color: transparent;
   height: 100%;
   width: 100%;
@@ -538,6 +538,16 @@ input[type="submit"]:focus {
   padding: 0;
   opacity: 0;
   overflow: auto;
+  background-color: #fff;
+  
+  /* scroll issue fixed */
+  
+  overflow-y:auto;
+  min-height: 100vh;
+  overflow-x:hidden;
+
+  /* gukemura scroll  issue */
+
   visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

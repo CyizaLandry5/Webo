@@ -1,1421 +1,1333 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>CYIZA Landry MPAYIMANA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
-    <meta name="author" content="lmpixels" />
-    <link rel="shortcut icon" href="titleimage.jpg">
 
-    <link rel="stylesheet" href="css/student_style.css">
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animations.css" type="text/css">
-    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+<!-- Head -->
 
-    <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CYIZA Landry MPAYIMANA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description"
+    content="Cyiza Landry Mpayimana – Innovator and Problem-Solver building smart solutions with code, focused on education and technology for good." />
+  <meta name="keywords"
+    content="cyizalandry,cyiza, MPAYIMANA , MPAYIMANA , Landry, MPAYIMANA CYIZA Landry, TVET, RWANDA, PYTHON, IT, Information Technology" />
+  <meta name="author" content="Cyiza Landry Mpayimana" />
+  <link rel="shortcut icon" href="titleimage.jpg">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animations.css" type="text/css">
+  <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<!-- End of head -->
 
-      .knowledge-grid {
-        display: flex;
-        flex-wrap: wrap;  /* Allows items to wrap naturally */
-        gap: 15px;  /* Adds spacing between items */
-        justify-content: space-between;  /* Distributes items evenly */
-        padding: 0;
-      }
-    
-      .knowledge-grid li {
-        flex: 1 1 calc(33% - 15px); /* Adjusts items into 3 columns */
-        list-style: none;
-        background: #f8f9fa;  /* Light background for visibility */
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-align: center;
-        font-weight: bold;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-      }
-    
-      @media (max-width: 768px) {
-        .knowledge-grid li {
-          flex: 1 1 calc(50% - 15px); /* Switch to 2 columns on tablets */
-        }
-      }
-    
-      @media (max-width: 480px) {
-        .knowledge-grid li {
-          flex: 1 1 100%; /* Single column for mobile */
-        }
-      }
+<body>
+  <!-- Animated Background -->
+  <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+  <!-- /Animated Background -->
 
-      .quiz-embed {
-        display: none; /* Initially hide all quizzes */
-        margin-top: 20px;
-      }
-      
-      .quiz-embed h5 {
-        margin-bottom: 10px;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-      
-      .embed-responsive {
-        position: relative;
-        display: block;
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      
-      .embed-responsive.embed-responsive-16by9 {
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      }
-      
-      .embed-responsive iframe {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-      
-      /* CSS target selectors:  Show the div when its id is the target of the URL */
-      #c-programming:target,
-      #iot:target,
-      #php:target,
-      #db:target,
-      #ml:target,
-      #python:target,
-      #python-ml:target {
-        display: block; /* Show the selected quiz */
-      }
-    </style>
-
-    
-  </head>
-
-  <body>
-    <!-- Animated Background -->
-    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
-    <!-- /Animated Background -->
-
-    <!-- Loading animation -->
-    <div class="preloader">
-      <div class="preloader-animation">
-        <div class="preloader-spinner">
-        </div>
+  <!-- Loading animation -->
+  <div class="preloader">
+    <div class="preloader-animation">
+      <div class="preloader-spinner">
       </div>
     </div>
-    <!-- /Loading animation -->
+  </div>
+  <!-- /Loading animation -->
 
-    <div class="page">
-      <div class="page-content">
+  <div class="page">
+    <div class="page-content">
 
-          <header id="site_header" class="header mobile-menu-hide">
-            <div class="header-content">
-              <div class="header-photo">
-                <img src="img/mine.jpg" alt="My Passport">
-              </div>
-              <div class="header-titles">
-                <h3>MPAYIMANA CYIZA LANDRY</h3>
-                <h4>Software Engineer</h4>
-               <!-- Responsive -->
-                
-              <!-- Responsive -->
-            </div>
-            <ul class="main-menu">
-              <li class="active">
-                <a href="#home" class="nav-anim">
-                  <span class="menu-icon lnr lnr-home"></span>
-                  <span class="link-text">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#about-me" class="nav-anim">
-                  <span class="menu-icon lnr lnr-user"></span>
-                  <span class="link-text">About Me</span>
-                </a>
-              </li>
-              <li>
-                <a href="#resume" class="nav-anim">
-                  <span class="menu-icon lnr lnr-graduation-hat"></span>
-                  <span class="link-text">Education</span>
-                </a>
-              </li>
-              <li>
-                <a href="#portfolio" class="nav-anim">
-                  <span class="menu-icon lnr lnr-license"></span>
-                  <span class="link-text">Credentials</span>
-                </a>
-              </li>
-              <li>
-                <a href="#blog" class="nav-anim">
-                  <span class="menu-icon fas fa-chalkboard-teacher"></span>
-                  <span class="link-text">Skill Up</span>
-                </a>
-              </li>
-              <li>
-                <a href="#contact" class="nav-anim">
-                  <span class="menu-icon lnr lnr-envelope"></span>
-                  <span class="link-text">Contact</span>
-                </a>
-              </li>
-            </ul>
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content">
+          <div class="header-photo">
+            <img src="img/mine.jpg" alt="MPAYIMANA, CYIZA, Landry">
+          </div>
+          <!-- headline -->
+          <div class="header-titles">
+            <h3>MPAYIMANA CYIZA LANDRY</h3>
+            <h4>Software Engineer</h4>
+            <!-- Responsive -->
 
-            <div class="social-links">
-              <ul>
-                <li><a href="https://www.linkedin.com/in/landry-cyiza-mpayimana-595a85262" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <!-- <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <!-- Responsive -->
+          </div>
+          <!-- end headline -->
+
+          <!-- Menu -->
+          <ul class="main-menu">
+            <li class="active">
+              <a href="#home" class="nav-anim">
+                <span class="menu-icon lnr lnr-home"></span>
+                <span class="link-text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about-me" class="nav-anim">
+                <span class="menu-icon lnr lnr-user"></span>
+                <span class="link-text">About Me</span>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" class="nav-anim">
+                <span class="menu-icon lnr lnr-graduation-hat"></span>
+                <span class="link-text">Education</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-anim">
+                <span class="menu-icon lnr lnr-license"></span>
+                <span class="link-text">Credentials</span>
+              </a>
+            </li>
+            <li>
+              <a href="#blog" class="nav-anim">
+                <span class="menu-icon fas fa-chalkboard-teacher"></span>
+                <span class="link-text">Skill Up</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-anim">
+                <span class="menu-icon lnr lnr-envelope"></span>
+                <span class="link-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+          <!-- end Menu -->
+
+          <div class="social-links">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/landry-cyiza-mpayimana-595a85262" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <!-- <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
-              </ul>
-            </div>
-
-            <div class="header-buttons">
-              <a href="resume/MPAYIMANA_CYIZA_Landry-CV.pdf" target="_blank" class="btn btn-primary" download="MPAYIMANA_CYIZA_Landry-CV.pdf">Download my Resume</a>
-            </div>
-
-            <div class="copyrights">© CYIZA Landry MPAYIMANA | All rights reserved.</div>
-          </header>
-
-          <!-- Mobile Navigation -->
-          <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            </ul>
           </div>
-          <!-- End Mobile Navigation -->
 
-          <!-- Arrows Nav -->
-          <div class="lmpixels-arrows-nav">
-            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
-            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          <div class="header-buttons">
+            <a href="resume/MPAYIMANA_CYIZA_Landry-CV.pdf" target="_blank" class="btn btn-primary"
+              download="MPAYIMANA_CYIZA_Landry-CV.pdf">Download my Resume</a>
           </div>
-          <!-- End Arrows Nav -->
 
-          <div class="content-area">
-            <div class="animated-sections">
-              <!-- Home Subpage -->
-              <section data-id="home" class="animated-section start-page">
-                <div class="section-content vcentered">
+          <div class="copyrights">© CYIZA Landry MPAYIMANA | All rights reserved.</div>
+      </header>
 
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="title-block">
-                          <h2>Welcome to my web</h2>
-                          <div class="owl-carousel text-rotation">                                    
-                            
-                            <div class="item">
-                              <div class="sp-subtitle">Scroll to explore...</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">...My achievements.</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">Thank you!</div>
-                            </div>  
+      <!-- Mobile Navigation -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End Mobile Navigation -->
 
-                          </div>
-                        </div>
+      <!-- Arrows Nav -->
+      <div class="lmpixels-arrows-nav">
+        <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+        <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+      </div>
+      <!-- End Arrows Nav -->
+
+      <div class="content-area">
+        <div class="animated-sections">
+          <!-- Home Subpage -->
+          <section data-id="home" class="animated-section start-page">
+            <div class="section-content vcentered">
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="title-block">
+                    <h5>I'm Cyiza Landry Mpayimana, a passionate IT Trainer, Network Administrator, and Innovator based
+                      in Musanze, Rwanda. With hands-on experience in Python programming, machine learning, IoT systems,
+                      and web development using PHP, I thrive on building smart solutions and sharing knowledge. I
+                      currently serve as Head of Department at Institut Technique Baptiste, where I lead technical
+                      training and manage the computer lab. My mission is to bridge the gap between emerging
+                      technologies and practical education, empowering the next generation of tech leaders.</h5>
+
+                    <!-- <div class="owl-carousel text-rotation">
+
+                      <div class="item">
+                        <div class="sp-subtitle">Scroll to explore...</div>
                       </div>
-                    </div>
+                      <div class="item">
+                        <div class="sp-subtitle">...My achievements.</div>
+                      </div>
+                      <div class="item">
+                        <div class="sp-subtitle">Thank you!</div>
+                      </div>
 
+                    </div> -->
+
+                  </div>
                 </div>
-              </section>
-              <!-- End of Home Subpage -->
+              </div>
 
-              <!-- About Me Subpage -->
-              <section data-id="about-me" class="animated-section">
-                <div class="section-content">
-                  <div class="page-title">
-                    <h2>About <span>Me</span><h2>
-                  </div>
+            </div>
+          </section>
+          <!-- End of Home Subpage -->
 
-                  <!-- Personal Information -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-7">
-                      <p>Tech Enthusiast | IT Trainer | Problem-Solver | Innovator<br> 
+          <!-- About Me Subpage -->
+          <section data-id="about-me" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>About <span>Me</span>
+                  <h2>
+              </div>
 
-                        <div class="owl-carousel text-rotation">     
-                          <div class="item">
-                            <div class="sp-subtitle">Empowering, Protecting, and Innovating</div>
-                          </div>
-                          <div class="item">
-                            <div class="sp-subtitle">in the Digital World</div>
-                          </div>
-                                        
-                         </div>
-            
-                      </p>
+              <!-- Personal Information -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                  <p>I'm Cyiza Landry Mpayimana, a passionate IT Trainer, Network Administrator, and Innovator based in
+                    Musanze, Rwanda. With hands-on experience in Python programming, machine learning, IoT systems, and
+                    web development using PHP, I thrive on building smart solutions and sharing knowledge. I currently
+                    serve as Head of Department at Institut Technique Baptiste, where I lead technical training and
+                    manage the computer lab. My mission is to bridge the gap between emerging technologies and practical
+                    education, empowering the next generation of tech leaders.<br>
+
+                    <!-- <div class="owl-carousel text-rotation">
+                    <div class="item">
+                      <div class="sp-subtitle">Empowering, Protecting, and Innovating</div>
+                    </div>
+                    <div class="item">
+                      <div class="sp-subtitle">in the Digital World</div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-5">
-                      <div class="info-list">
-                        <ul>
-                          
-
-                          <li>
-                            <span class="title">Location</span>
-                            <span class="value">Musanze, Rwanda</span>
-                          </li>
-
-                          <!-- <li>
-                            <span class="title">Address</span>
-                            <span class="value">Musanze </span>
-                          </li> -->
-
-                          <li>
-                            <span class="title">Personal Email</span>
-                            <span class="value">cyizalandry5@gmail.com</span>
-                          </li>
-
-                          <li>
-                            <span class="title">Phone</span>
-                            <span class="value">+250 780 105 612</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Personal Information -->
-
-
-                  <div class="white-space-20"></div>
-
-                  <!-- Services -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>Some of my <span> tasks</span></h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="fas fa-school"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>IT Training & Education:</h4>
-                              <p>
-                                Offering expert training in network technologies, cybersecurity, and cloud computing for all skill levels.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="fas fa-shield-alt"></i>
-                            </div><div class="ci-text">
-                              <h4>Cybersecurity Consulting:</h4>
-                              <p>
-                                Certified in Cyber Security Essentials and Network Security, guiding clients to protect their data and navigate the digital world securely.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="fas fa-cloud"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Cloud Solutions Advocate:</h4>
-                              <p>
-                                Specializing in 5G, AI, and cloud computing, helping businesses achieve digital transformation and operational efficiency.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-flag"></i>
-                            </div><div class="ci-text">
-                              <h4>Leadership Development:</h4>
-                              <p>
-                                Coaching IT professionals in leadership, communication, and team collaboration for career growth.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Services -->
-
-                  <div class="white-space-30"></div>
-
-                  <!-- Testimonials -->
-                  <!-- <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>Testimonials</h3>
-                      </div>
-                    </div>
-                  </div> 
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="testimonials owl-carousel">-->
-                        <!-- Testimonial 1 -->
-                       <!-- <div class="testimonial">
-                          <div class="img">
-                            <img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith">
-                          </div>
-                          <div class="text">
-                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
-                          </div>
-
-                          <div class="author-info">
-                            <h4 class="author">Julia Hickman</h4>
-                            <h5 class="company">Omni Source</h5>
-                            <div class="icon">
-                              <i class="fas fa-quote-right"></i>
-                            </div>
-                          </div>
-                        </div>-->
-                        <!-- End of Testimonial 1 -->
-
-                        <!-- Testimonial 2 -->
-                       <!-- <div class="testimonial">
-                          <div class="img">
-                            <img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">
-                          </div>
-                          <div class="text">
-                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
-                          </div>
-
-                          <div class="author-info">
-                            <h4 class="author">Robert Watkins</h4>
-                            <h5 class="company">Endicott Shoes</h5>
-                            <div class="icon">
-                              <i class="fas fa-quote-right"></i>
-                            </div>
-                          </div>
-                        </div>-->
-                        <!-- End of Testimonial 2 -->
-
-                        <!-- Testimonial 3 -->
-                        <!-- <div class="testimonial">
-                          <div class="img">
-                            <img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">
-                          </div>
-                          <div class="text">
-                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
-                          </div>
-
-                          <div class="author-info">
-                            <h4 class="author">Kristin Carroll</h4>
-                            <h5 class="company">Helping Hand</h5>
-                            <div class="icon">
-                              <i class="fas fa-quote-right"></i>
-                            </div>
-                          </div>
-                        </div>-->
-                        <!-- End of Testimonial 3 -->
-                      <!-- </div>
-                    </div>
-                  </div>-->
-                  <!-- End of Testimonials -->  
-
-                 <!--  <div class="white-space-50"></div> -->
-
-                  <!-- Clients 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>Cilents</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="clients owl-carousel">
-                        
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-1.png" alt="Logo">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-2.png" alt="Logo">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-3.png" alt="Logo">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-4.png" alt="Logo">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-5.png" alt="Logo">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-6.png" alt="Logo">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="Logo">
-                            <img src="img/clients/client-7.png" alt="Logo">
-                          </a>
-                        </div>
-  
-                      </div>
-                    </div>
                   </div> -->
-               <!-- End of Clients 
 
-                  <div class="white-space-50"></div>-->
+                  </p>
+                </div>
 
-                  <!-- Pricing -->
+                <div class="col-xs-12 col-sm-5">
+                  <div class="info-list">
+                    <ul>
 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
 
-                      <div class="block-title">
-                        <h3>Pricing</h3>
+                      <li>
+                        <span class="title">Location</span>
+                        <span class="value">Musanze, Rwanda</span>
+                      </li>
+
+                      <!-- <li>
+              <span class="title">Address</span>
+              <span class="value">Musanze </span>
+            </li> -->
+
+                      <li>
+                        <span class="title">Personal Email</span>
+                        <span class="value">cyizalandry5@gmail.com</span>
+                      </li>
+
+                      <li>
+                        <span class="title">Phone</span>
+                        <span class="value">+250 780 105 612</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Personal Information -->
+
+
+              <div class="white-space-20"></div>
+
+              <!-- Services -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="block-title">
+                    <h3>Some of my <span> tasks</span></h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="col-inner">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-school"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>IT Training & Education:</h4>
+                          <p>
+                            Offering expert training in network technologies, cybersecurity, and cloud computing for all
+                            skill levels.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Cybersecurity Consulting:</h4>
+                          <p>
+                            Certified in Cyber Security Essentials and Network Security, guiding clients to protect
+                            their data and navigate the digital world securely.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="row">
-                    <div class=" col-xs-12 col-sm-12 ">
-                      <div class="fw-pricing clearfix row">
-                        
-                        <div class="fw-package-wrap col-md-6 highlight-col">
-                          <div class="fw-package">
-                            <div class="fw-heading-row">
-                              <span>One <strong>Hour</strong> -> Sunday</span>
-                            </div>
-                            
-                            <div class="fw-pricing-row">
-                              <span>5,000 Rwf</span>
-                              <small>Negotiable</small>
-                            </div>
-                            
-                            <div class="fw-button-row">
-
-                              <!-- <a href="https://wa.me/250780105612?text=Hello%20I%20need%20help!" target="_blank">
-                                <button>Chat Now</button>
-                            </a> -->
-
-                              <a href="https://wa.me/250780105612?text=Hello%20I%20need%20help!" target="_blank" class="btn btn-secondary">BOOK</a>
-                            </div>
-
-                            <div class="fw-default-row">"Act as if what you do makes a difference.</div>
-                            <div class="fw-default-row">It does."</div>
-                            <div class="fw-default-row">— William James</div>
-                          </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="col-inner">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-cloud"></i>
                         </div>
-     
-                        <div class="fw-package-wrap col-md-6 highlight-col ">
-                          <div class="fw-package">
-                            <div class="fw-heading-row">
-                              <span>A <strong>Booked</strong> Day</span>
-                            </div>
-                            
-                            <div class="fw-pricing-row">
-                              <span>45,000 Rwf</span>
-                              <small>Negotiable</small>
-                            </div>
-
-                            <div class="fw-button-row">
-                              <a href="https://wa.me/250780105612?text=Hello%20I%20need%20help!" target="_blank" class="btn btn-primary">BOOK</a>
-                            </div>
-                            
-                            <div class="fw-default-row">"The well-satisfied customer</div>
-                            <div class="fw-default-row">will bring the repeat sale that counts."</div>
-                            <div class="fw-default-row">— James Cash Penney</div>
-                          </div>
+                        <div class="ci-text">
+                          <h4>Cloud Solutions Advocate:</h4>
+                          <p>
+                            Specializing in 5G, AI, and cloud computing, helping businesses achieve digital
+                            transformation and operational efficiency.
+                          </p>
                         </div>
-
+                      </div>
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lnr lnr-flag"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Leadership Development:</h4>
+                          <p>
+                            Coaching IT professionals in leadership, communication, and team collaboration for career
+                            growth.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                 <!-- End of Pricing -->
+                </div>
+              </div>
+              <!-- End of Services -->
+
+              <div class="white-space-30"></div>
+
+              <!-- Testimonials -->
+              <!-- <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="block-title">
+          <h3>Testimonials</h3>
+        </div>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="testimonials owl-carousel">-->
+              <!-- Testimonial 1 -->
+              <!-- <div class="testimonial">
+            <div class="img">
+              <img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith">
+            </div>
+            <div class="text">
+              <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+            </div>
+
+            <div class="author-info">
+              <h4 class="author">Julia Hickman</h4>
+              <h5 class="company">Omni Source</h5>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+          </div>-->
+              <!-- End of Testimonial 1 -->
+
+              <!-- Testimonial 2 -->
+              <!-- <div class="testimonial">
+            <div class="img">
+              <img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">
+            </div>
+            <div class="text">
+              <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+            </div>
+
+            <div class="author-info">
+              <h4 class="author">Robert Watkins</h4>
+              <h5 class="company">Endicott Shoes</h5>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+          </div>-->
+              <!-- End of Testimonial 2 -->
+
+              <!-- Testimonial 3 -->
+              <!-- <div class="testimonial">
+            <div class="img">
+              <img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">
+            </div>
+            <div class="text">
+              <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+            </div>
+
+            <div class="author-info">
+              <h4 class="author">Kristin Carroll</h4>
+              <h5 class="company">Helping Hand</h5>
+              <div class="icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+          </div>-->
+              <!-- End of Testimonial 3 -->
+              <!-- </div>
+      </div>
+    </div>-->
+              <!-- End of Testimonials -->
+
+              <!--  <div class="white-space-50"></div> -->
+
+              <!-- Clients 
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="block-title">
+          <h3>Cilents</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="clients owl-carousel">
+          
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-1.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-2.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-3.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-4.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-5.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-6.png" alt="Logo">
+            </a>
+          </div>
+
+          <div class="client-block">
+            <a href="#" target="_blank" title="Logo">
+              <img src="img/clients/client-7.png" alt="Logo">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+              <!-- End of Clients 
+
+    <div class="white-space-50"></div>-->
+
+              <!-- Pricing -->
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+
+                  <div class="block-title">
+                    <h3>Pricing</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class=" col-xs-12 col-sm-12 ">
+                  <div class="fw-pricing clearfix row">
+
+                    <div class="fw-package-wrap col-md-6 highlight-col">
+                      <div class="fw-package">
+                        <div class="fw-heading-row">
+                          <span>One <strong>Hour</strong> -> Sunday</span>
+                        </div>
+
+                        <div class="fw-pricing-row">
+                          <span>5,000 Rwf</span>
+                          <small>Negotiable</small>
+                        </div>
+
+                        <div class="fw-button-row">
+
+                          <!-- <a href="https://wa.me/250780105612?text=Hello%20I%20need%20help!" target="_blank">
+                  <button>Chat Now</button>
+              </a> -->
+
+                          <a href="https://wa.me/250780105612?text=Hello%20I%20need%20help!" target="_blank"
+                            class="btn btn-secondary">BOOK</a>
+                        </div>
+
+                        <div class="fw-default-row">"Act as if what you do makes a difference.</div>
+                        <div class="fw-default-row">It does."</div>
+                        <div class="fw-default-row">— William James</div>
+                      </div>
+                    </div>
+
+                    <div class="fw-package-wrap col-md-6 highlight-col ">
+                      <div class="fw-package">
+                        <div class="fw-heading-row">
+                          <span>A <strong>Booked</strong> Day</span>
+                        </div>
+
+                        <div class="fw-pricing-row">
+                          <span>45,000 Rwf</span>
+                          <small>Negotiable</small>
+                        </div>
+
+                        <div class="fw-button-row">
+                          <a href="https://wa.me/250780105612?text=Hello%20I%20need%20help!" target="_blank"
+                            class="btn btn-primary">BOOK</a>
+                        </div>
+
+                        <div class="fw-default-row">"The well-satisfied customer</div>
+                        <div class="fw-default-row">will bring the repeat sale that counts."</div>
+                        <div class="fw-default-row">— James Cash Penney</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- End of Pricing -->
+
+              <div class="white-space-50"></div>
+
+              <!-- Fun Facts -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+
+                  <div class="block-title">
+                    <h3>Key <span>Achievements</span></h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                  <div class="fun-fact gray-default">
+                    <i class="lnr lnr-heart"></i>
+                    <h5>Satisfied Clients</h5>
+                    <span class="fun-fact-block-value">678+</span>
+                    <span class="fun-fact-block-text"></span>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                  <div class="fun-fact gray-default">
+                    <i class="lnr lnr-clock"></i>
+                    <h5>Hours of Daily Dedication</h5>
+                    <span class="fun-fact-block-value">9 Hours +</span>
+                    <span class="fun-fact-block-text"></span>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 ">
+                  <div class="fun-fact gray-default">
+                    <i class="lnr lnr-star"></i>
+                    <h5>Awards Received</h5>
+                    <span class="fun-fact-block-value">20+</span>
+                    <span class="fun-fact-block-text"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Fun Facts -->
+
+            </div>
+          </section>
+          <!-- End of About Me Subpage -->
+
+          <!-- Resume Subpage -->
+          <section data-id="resume" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>My CV</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-7">
+
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+
+
+                  <div class="timeline timeline-second-style clearfix">
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2024-2026</h5>
+                        <span class="item-company">University of Kigali</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Bachelor's of Science in Information Technology</h4>
+                        <p>
+                          1️⃣In progress...<br>
+                          2️⃣Serving as a class representative, ensuring smooth communication between students and
+                          staff.<br>
+                          3️⃣Assisting fellow students with assignments, coursework, and technical concepts.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2021-2023</h5>
+                        <span class="item-company">IPRC TUMBA</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Advanced Diploma in Information Technology</h4>
+                        <p>
+                          1️⃣Graduated as one of the top performers.<br>
+                          2️⃣Nominated for Huawei’s Seeds for the Future program.<br>
+                          3️⃣Completed an additional intensive curriculum in 5G, AI, cloud computing, and digital
+                          power.<br>
+                          4️⃣Participated in the Global Tech4Good competition, enhancing leadership and entrepreneurship
+                          skills.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2014-2018</h5>
+                        <span class="item-company">Bulinga TVET School</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Diploma in Computer Science</h4>
+                        <p>
+                          1️⃣Career Start<br>
+
+                          2️⃣Developed an e-District Management System in PHP.<br>
+                          3️⃣Secured communication for district, sector, and cell leaders.<br>
+                          4️⃣Implemented database and chat for efficient issue resolution.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="white-space-50"></div>
 
-                  <!-- Fun Facts -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-
-                      <div class="block-title">
-                        <h3>Key <span>Achievements</span></h3>
-                      </div>
-                    </div>
+                  <div class="block-title">
+                    <h3>Experience</h3>
                   </div>
 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="fun-fact gray-default">
-                        <i class="lnr lnr-heart"></i>
-                        <h5>Satisfied Clients</h5>
-                        <span class="fun-fact-block-value">678+</span>
-                        <span class="fun-fact-block-text"></span>
+                  <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">Feb, 2024 - Current</h5>
+                        <span class="item-company">
+                          IT and Trainner
+                        </span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Baptist Technical Institute, Trainer</h4>
+                        <p>
+                          1️⃣I am Head of Department, Network Administrator and Computer Lab manager<br>
+                          2️⃣I Develop and deliver comprehensive training on:
+                          Python programming, Machine Learning, Appy python for Machine Learning, IoT Web Applications
+                          development using PHP, Database Administration, C Programming Fundamentals and IoT system
+                          installation.
+
+                        </p>
                       </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="fun-fact gray-default">
-                        <i class="lnr lnr-clock"></i>
-                        <h5>Hours of Daily Dedication</h5>
-                        <span class="fun-fact-block-value">9 Hours +</span>
-                        <span class="fun-fact-block-text"></span>
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2023</h5>
+                        <span class="item-company">Intern and Trainner</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">IT Trainer Intern, Eric Teck Ltd</h4>
+                        <p>
+                          1️⃣Spearheaded the development of an IoT-based Gas Detector Monitoring System to address gas
+                          leakage hazards.<br>
+                          2️⃣Trained secondary school interns in practical computer applications.<br>
+                          3️⃣Assisted clients with computer related issues, enhancing problem solving and customer
+                          service
+                          skills.<br>
+                        </p>
                       </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-4 ">
-                      <div class="fun-fact gray-default">
-                        <i class="lnr lnr-star"></i>
-                        <h5>Awards Received</h5>
-                        <span class="fun-fact-block-value">20+</span>
-                        <span class="fun-fact-block-text"></span>
-                      </div>
-                    </div>
                   </div>
-                  <!-- End of Fun Facts -->
 
                 </div>
-              </section>
-              <!-- End of About Me Subpage -->
 
-               
 
-              <!-- Resume Subpage -->
-              <section data-id="resume" class="animated-section">
-                <div class="section-content">  
-                  <div class="page-title">
-                    <h2>My CV</h2>
+                <!-- Skills & Certificates -->
+                <div class="col-xs-12 col-sm-5">
+                  <!-- Technical Competencies -->
+                  <div class="block-title">
+                    <h3>Technical <span>Competencies</span></h3>
                   </div>
 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-7">
-
-                      <div class="block-title">
-                        <h3>Education</h3>
-                      </div>
-                      
-                      
-                      <div class="timeline timeline-second-style clearfix">
-                        
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2024-2027</h5>
-                            <span class="item-company">University of Kigali</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Bachelor's of Science in Information Technology</h4>
-                            <p>
-                              1️⃣In progress...<br>
-                              2️⃣Serving as a class representative, ensuring smooth communication between students and staff.<br>
-                              3️⃣Assisting fellow students with assignments, coursework, and technical concepts.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2021-2023</h5>
-                            <span class="item-company">IPRC TUMBA</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Advanced Diploma in Information Technology</h4>
-                            <p>
-                              1️⃣Graduated as one of the top performers.<br>
-                              2️⃣Nominated for Huawei’s Seeds for the Future program.<br>
-                              3️⃣Completed an additional intensive curriculum in 5G, AI, cloud computing, and digital power.<br>
-                              4️⃣Participated in the Global Tech4Good competition, enhancing leadership and entrepreneurship
-                              skills.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2014-2018</h5>
-                            <span class="item-company">Bulinga TVET School</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Diploma in Computer Science</h4>
-                            <p>
-                              1️⃣Career Start<br>
-
-                              2️⃣Developed an e-District Management System in PHP.<br>
-                              3️⃣Secured communication for district, sector, and cell leaders.<br>
-                              4️⃣Implemented database and chat for efficient issue resolution.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="white-space-50"></div>
-
-                      <div class="block-title">
-                        <h3>Experience</h3>
-                      </div>
-
-                      <div class="timeline timeline-second-style clearfix">
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">Feb, 2024 - Current</h5>
-                            <span class="item-company">
-                                      IT and Trainner
-                            </span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Baptist Technical Institute, Trainer</h4>
-                            <p>
-                              1️⃣I am Head of Department, Network Administrator and Computer Lab manager<br>
-                              2️⃣I Develop and deliver comprehensive training on:
-                              Python programming, Machine Learning, Appy python for Machine Learning, IoT Web Applications
-                              development using PHP, Database Administration, C Programming Fundamentals and IoT system
-                              installation.
-                          
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2023</h5>
-                            <span class="item-company">Intern and Trainner</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">IT Trainer Intern, Eric Teck Ltd</h4>
-                            <p>
-                              1️⃣Spearheaded the development of an IoT-based Gas Detector Monitoring System to address gas
-                              leakage hazards.<br>
-                              2️⃣Trained secondary school interns in practical computer applications.<br>
-                              3️⃣Assisted clients with computer related issues, enhancing problem solving and customer service
-                              skills.<br>
-                            </p>
-                          </div>
-                        </div>
-                        
-                                              </div>
-
+                  <div class="skills-info skills-second-style">
+                    <div class="skill clearfix">
+                      <h4>IT System Development</h4>
+                      <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container" style="width: 95%;">
+                      <div class="skill-percentage"></div>
                     </div>
 
-
-                                        <!-- Skills & Certificates -->
-                                        <div class="col-xs-12 col-sm-5">
-                                          <!-- Technical Competencies -->
-                                          <div class="block-title">
-                                            <h3>Technical <span>Competencies</span></h3>
-                                          </div>
-                    
-                                          <div class="skills-info skills-second-style">
-                                            <div class="skill clearfix">
-                                              <h4>IT System Development</h4>
-                                              <div class="skill-value">95%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 95%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Advanced Web Technologies</h4>
-                                              <div class="skill-value">95%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 95%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Network Security</h4>
-                                              <div class="skill-value">90%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 90%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Python and Fundamentals of AI</h4>
-                                              <div class="skill-value">94%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 94%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Mobile Application Development</h4>
-                                              <div class="skill-value">96%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 96%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>USSD Application</h4>
-                                              <div class="skill-value">90%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 90%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>API Development</h4>
-                                              <div class="skill-value">95%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 95%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Internet of Things</h4>
-                                              <div class="skill-value">94%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 94%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Database Administration</h4>
-                                              <div class="skill-value">98%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 98%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Object-Oriented Programming Using Java</h4>
-                                              <div class="skill-value">88%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 88%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Large Networks Administration</h4>
-                                              <div class="skill-value">91%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 91%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Windows Server Administration</h4>
-                                              <div class="skill-value">94%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 94%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Installation of IP-Based Devices</h4>
-                                              <div class="skill-value">95%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 95%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Linux System Administration</h4>
-                                              <div class="skill-value">89%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 89%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Backend Development Using Java</h4>
-                                              <div class="skill-value">88%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 88%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Advanced Computer Literacy</h4>
-                                              <div class="skill-value">96%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 96%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                                          </div>
-                    
-                                          <div class="white-space-10"></div>
-                    
-                                          <!-- Other Skills -->
-                                          <div class="block-title">
-                                            <h3>Other <span>Skills</span></h3>
-                                          </div>
-                    
-                                          <div class="skills-info skills-second-style">
-                                            <div class="skill clearfix">
-                                              <h4>Professional Ethics</h4>
-                                              <div class="skill-value">99%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 99%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Team Management</h4>
-                                              <div class="skill-value">95%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 95%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Soft Skills</h4>
-                                              <div class="skill-value">100%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 100%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Workplace Environmental Management</h4>
-                                              <div class="skill-value">97%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 97%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                    
-                                            <div class="skill clearfix">
-                                              <h4>Advanced Workplace English</h4>
-                                              <div class="skill-value">90%</div>
-                                            </div>
-                                            <div class="skill-container" style="width: 90%;">
-                                              <div class="skill-percentage"></div>
-                                            </div>
-                                          </div>
-                    
-                                        
-                                        <!-- End of Skills & Certificates -->
-                    
-
-
-                     
+                    <div class="skill clearfix">
+                      <h4>Advanced Web Technologies</h4>
+                      <div class="skill-value">95%</div>
                     </div>
-                    <!-- End of Skills & Certificates -->
-                  </div>
+                    <div class="skill-container" style="width: 95%;">
+                      <div class="skill-percentage"></div>
+                    </div>
 
-                  <div class="white-space-50"></div>
- <!-- Knowledges -->
- <div class="block-title">
-  <h3>Knowledges</h3>
-</div>
+                    <div class="skill clearfix">
+                      <h4>Network Security</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container" style="width: 90%;">
+                      <div class="skill-percentage"></div>
+                    </div>
 
-<ul class="knowledges">
-  <li>Object-Oriented Programming (OOP)</li>
-  <li>API Development & Integration</li>
-  <li>Full-Stack Web Development (PHP and Python)</li>
-  <li>Mobile App Development (Android & iOS)</li>
-  <li>USSD & SMS-Based Application Development</li>
-  <li>Ethical Hacking & Penetration Testing</li>
-  <li>Network Security & Firewall Management
-  </li>
-  <li>Windows & Linux Server Administration</li>
-  <li>Cloud Security (AWS, Azure, Google Cloud)</li>
-  <li>IoT Security & Secure Embedded Systems
-  </li>
-  <li>Machine Learning Fundamentals
-  </li>
-  <li>Data Analysis & Visualization
-  </li>
-  <li>AI Model Deployment
-  </li>
-  <li>Predictive Analytics
-  </li>
-  <li>Deep Learning Basics
-  </li>
-  <li>IoT Device Installation & Configuration
-  </li>
-  <li>Smart Home & Industrial IoT Systems
-  </li>
-  <li>MQTT, Zigbee & LoRaWAN Protocols
-  </li>
-  <li>Edge Computing & AI on IoT Devices
-  </li>
-  <li>Database Administration (MySQL, PostgreSQL)
-  </li>
-  <li>NoSQL Databases (MongoDB, Firebase)
-  </li>
-  <li>SQL Query Optimization
-  </li>
-  <li>System Architecture Design
-  </li>
-  <li>IT Project Management</li>
-  <li>Technical Training & Mentorship
-  </li>
-  <li>Agile & DevOps Practices
-  </li>
-  <li>Tech Entrepreneurship & Startup Development
-  </li>
-  <li>Virtualization & Containerization (Docker, Kubernetes)
-  </li>
-  <li>CI/CD Pipeline Automation
-  </li>
-  <li>Serverless Computing
-  </li>
-  <li>Cloud Infrastructure Management
-  </li>
-</ul>
-<div><br><br></div>
-<!-- End of Knowledges -->
-                  <!-- Certificates -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>Other Colleges Attended</h3>
-                      </div>
+                    <div class="skill clearfix">
+                      <h4>Python and Fundamentals of AI</h4>
+                      <div class="skill-value">94%</div>
+                    </div>
+                    <div class="skill-container" style="width: 94%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Mobile Application Development</h4>
+                      <div class="skill-value">96%</div>
+                    </div>
+                    <div class="skill-container" style="width: 96%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>USSD Application</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container" style="width: 90%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>API Development</h4>
+                      <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container" style="width: 95%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Internet of Things</h4>
+                      <div class="skill-value">94%</div>
+                    </div>
+                    <div class="skill-container" style="width: 94%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Database Administration</h4>
+                      <div class="skill-value">98%</div>
+                    </div>
+                    <div class="skill-container" style="width: 98%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Object-Oriented Programming Using Java</h4>
+                      <div class="skill-value">88%</div>
+                    </div>
+                    <div class="skill-container" style="width: 88%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Large Networks Administration</h4>
+                      <div class="skill-value">91%</div>
+                    </div>
+                    <div class="skill-container" style="width: 91%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Windows Server Administration</h4>
+                      <div class="skill-value">94%</div>
+                    </div>
+                    <div class="skill-container" style="width: 94%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Installation of IP-Based Devices</h4>
+                      <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container" style="width: 95%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Linux System Administration</h4>
+                      <div class="skill-value">89%</div>
+                    </div>
+                    <div class="skill-container" style="width: 89%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Backend Development Using Java</h4>
+                      <div class="skill-value">88%</div>
+                    </div>
+                    <div class="skill-container" style="width: 88%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Advanced Computer Literacy</h4>
+                      <div class="skill-value">96%</div>
+                    </div>
+                    <div class="skill-container" style="width: 96%;">
+                      <div class="skill-percentage"></div>
                     </div>
                   </div>
-                  
-                  <div class="row">
-                    <!-- Certificate 1 -->
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="certificate-item clearfix">
-                        <div class="certi-logo">
-                          <img src="img/clients/seeds.jpeg" alt="logo">
-                        </div>
-                        
-                        <div class="certi-content">
-                          <div class="certi-title">
-                            <h4>Huawei </h4>
-                          </div>
-                          <div class="certi-id">
-                            <span>Seeds For Future</span>
-                          </div>
-                          <div class="certi-date">
-                            <span>2023</span>
-                          </div>
-                          <div class="certi-company">
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
 
+                  <div class="white-space-10"></div>
 
+                  <!-- Other Skills -->
+                  <div class="block-title">
+                    <h3>Other <span>Skills</span></h3>
+                  </div>
 
-                      
+                  <div class="skills-info skills-second-style">
+                    <div class="skill clearfix">
+                      <h4>Professional Ethics</h4>
+                      <div class="skill-value">99%</div>
                     </div>
-                    <!-- End of Certificate 1 -->
-
-                    <!-- Certificate 2 -->
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="certificate-item clearfix">
-                        <div class="certi-logo">
-                          <img src="img/clients/Kepler_Logo.png" alt="logo">
-                        </div>
-                        
-                        <div class="certi-content">
-                          <div class="certi-title">
-                            <h4>Kepler College</h4>
-                          </div>
-                          <div class="certi-id">
-                            <span>SCAD</span>
-                          </div>
-                          <div class="certi-date">
-                            <span>2023</span>
-                          </div>
-                          <div class="certi-company">
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="skill-container" style="width: 99%;">
+                      <div class="skill-percentage"></div>
                     </div>
-                    <!-- End of Certificate 2 -->
 
+                    <div class="skill clearfix">
+                      <h4>Team Management</h4>
+                      <div class="skill-value">95%</div>
+                    </div>
+                    <div class="skill-container" style="width: 95%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Soft Skills</h4>
+                      <div class="skill-value">100%</div>
+                    </div>
+                    <div class="skill-container" style="width: 100%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Workplace Environmental Management</h4>
+                      <div class="skill-value">97%</div>
+                    </div>
+                    <div class="skill-container" style="width: 97%;">
+                      <div class="skill-percentage"></div>
+                    </div>
+
+                    <div class="skill clearfix">
+                      <h4>Advanced Workplace English</h4>
+                      <div class="skill-value">90%</div>
+                    </div>
+                    <div class="skill-container" style="width: 90%;">
+                      <div class="skill-percentage"></div>
+                    </div>
                   </div>
 
 
+                  <!-- End of Skills & Certificates -->
 
 
 
 
-                  
-
-                  <!-- End of Certificates -->
                 </div>
-              </section>
-              <!-- End of Resume Subpage -->
+                <!-- End of Skills & Certificates -->
+              </div>
 
-              <!-- Portfolio Subpage -->
-              <section data-id="portfolio" class="animated-section">
-                <div class="section-content">  
-                  <div class="page-title">
-                    <h2>Certification and Letters of Merit</h2>
+              <div class="white-space-50"></div>
+              <!-- Knowledges -->
+              <div class="block-title">
+                <h3>Knowledges</h3>
+              </div>
+
+              <ul class="knowledges">
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>API Development & Integration</li>
+                <li>Full-Stack Web Development (PHP and Python)</li>
+                <li>Mobile App Development (Android & iOS)</li>
+                <li>USSD & SMS-Based Application Development</li>
+                <li>Ethical Hacking & Penetration Testing</li>
+                <li>Network Security & Firewall Management
+                </li>
+                <li>Windows & Linux Server Administration</li>
+                <li>Cloud Security (AWS, Azure, Google Cloud)</li>
+                <li>IoT Security & Secure Embedded Systems
+                </li>
+                <li>Machine Learning Fundamentals
+                </li>
+                <li>Data Analysis & Visualization
+                </li>
+                <li>AI Model Deployment
+                </li>
+                <li>Predictive Analytics
+                </li>
+                <li>Deep Learning Basics
+                </li>
+                <li>IoT Device Installation & Configuration
+                </li>
+                <li>Smart Home & Industrial IoT Systems
+                </li>
+                <li>MQTT, Zigbee & LoRaWAN Protocols
+                </li>
+                <li>Edge Computing & AI on IoT Devices
+                </li>
+                <li>Database Administration (MySQL, PostgreSQL)
+                </li>
+                <li>NoSQL Databases (MongoDB, Firebase)
+                </li>
+                <li>SQL Query Optimization
+                </li>
+                <li>System Architecture Design
+                </li>
+                <li>IT Project Management</li>
+                <li>Technical Training & Mentorship
+                </li>
+                <li>Agile & DevOps Practices
+                </li>
+                <li>Tech Entrepreneurship & Startup Development
+                </li>
+                <li>Virtualization & Containerization (Docker, Kubernetes)
+                </li>
+                <li>CI/CD Pipeline Automation
+                </li>
+                <li>Serverless Computing
+                </li>
+                <li>Cloud Infrastructure Management
+                </li>
+              </ul>
+              <div><br><br></div>
+              <!-- End of Knowledges -->
+              <!-- Certificates -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="block-title">
+                    <h3>Other Colleges Attended</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Certificate 1 -->
+                <div class="col-xs-12 col-sm-6">
+                  <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                      <img src="img/clients/seeds.jpeg" alt="logo">
+                    </div>
+
+                    <div class="certi-content">
+                      <div class="certi-title">
+                        <h4>Huawei </h4>
+                      </div>
+                      <div class="certi-id">
+                        <span>Seeds For Future</span>
+                      </div>
+                      <div class="certi-date">
+                        <span>2023</span>
+                      </div>
+                      <div class="certi-company">
+                        <span></span>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <!-- Portfolio Content -->
-                      <div class="portfolio-content">
-
-                        <ul class="portfolio-filters">
-                          <li class="active">
-                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_detailed">Networking-Based</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Programming-Based</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">Languages-Based</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Soft-Skills-Based</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">Letters of Merit</a>
-                          </li>
-                        </ul>
-
-                        <!-- Certificate Grid -->
-
-                        <!-- <i class="fa fa-exclamation-triangle"></i>
-                            <h4 class="name">Sorry this page is currently unavailable for a reason <br>(Soon to be updated)</h4>
-                             -->
-
-                         <div class="portfolio-grid three-columns">
-                          <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/CCNA_Introduction_to_Networks_certificate.jpg" alt="Introduction to Networks" title="" />
-                              <a class="lightbox" title="Introduction to Networks" href="img/certi/CCNA_Introduction_to_Networks_certificate.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Introduction to Networks</h4>
-                            <span class="category">Networking</span>
-                          </figure>
-                        
-                          <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg" alt="Switching Routing and Wireless Essentials" title="" />
-                              <a class="lightbox" title="Switching Routing and Wireless Essentials" href="img/certi/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Switching Routing and Wireless Essentials</h4>
-                            <span class="category">Networking</span>
-                          </figure>
-                        
-                          <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/Cybersecurity_Essentials_certificate.jpg" alt="Cybersecurity Essentials certificate" title="" />
-                              <a class="lightbox" title="Cybersecurity Essentials certificate" href="img/certi/Cybersecurity_Essentials_certificate.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Cybersecurity Essentials certificate</h4>
-                            <span class="category">Networking</span>
-                          </figure>
-                        
-                          <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/Network_Security_certificate.jpg" alt="Network Security" title="" />
-                              <a class="lightbox" title="Network Security" href="img/certi/Network_Security_certificate.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Network Security</h4>
-                            <span class="category">Networking</span>
-                          </figure>
-                        
-                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/Programming_Essentials_in_Python_certificate.jpg" alt="Programming Essentials in Python" title="" />
-                              <a class="lightbox" title="Programming Essentials in Python" href="img/certi/Programming_Essentials_in_Python_certificate.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Programming Essentials in Python</h4>
-                            <span class="category">Programming</span>
-                          </figure>
-                        
-                          <figure class="item lbimage" data-groups='["category_all", "category_soundcloud"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/English_for_IT_2_certificate.jpg" alt="English for IT 2" title="" />
-                              <a class="lightbox" title="English for IT 2" href="img/certi/English_for_IT_2_certificate.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">English for IT 2</h4>
-                            <span class="category">Languages</span>
-                          </figure>
-
-                          <figure class="item lbimage" data-groups='["category_all", "category_vimeo-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/SCAD-1/SCAD 1_page-0001.jpg" alt="Soft Skills and Carrer Development" title="" />
-                              <a class="lightbox" title="Soft Skills and Carrer Development" href="img/certi/SCAD-1/SCAD 1_page-0001.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">SCAD</h4>
-                            <span class="category">Soft skills</span>
-                          </figure>
-
-                          
-                          <figure class="item lbimage" data-groups='["category_all", "category_youtube-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_Introduct_Networks.jpg" alt="Introduction to Networks" title="" />
-                              <a class="lightbox" title="Introduction to Networks" href="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_Introduct_Networks.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Introduction to Networks</h4>
-                            <span class="category">Introduction to Networks</span>
-                          </figure>
-
-                          <figure class="item lbimage" data-groups='["category_all", "category_youtube-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_1_Yr2A202_Switching_Routing.jpg" alt="Switching Routing and Wireless Essentials" title="" />
-                              <a class="lightbox" title="Switching Routing and Wireless Essentials" href="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_1_Yr2A202_Switching_Routing.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Switching Routing and Wireless Essentials</h4>
-                            <span class="category">Switching Routing and Wireless Essentials</span>
-                          </figure>
-                          <figure class="item lbimage" data-groups='["category_all", "category_youtube-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_Netacad_Summer_NetorkSecurity.jpg" alt="Network Security" title="" />
-                              <a class="lightbox" title="Network Security" href="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_Netacad_Summer_NetorkSecurity.jpg"></a>
-                            </div>
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Network Security</h4>
-                            <span class="category">Network Security</span>
-                          </figure>
 
 
-                        </div>
+
+                </div>
+                <!-- End of Certificate 1 -->
+
+                <!-- Certificate 2 -->
+                <div class="col-xs-12 col-sm-6">
+                  <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                      <img src="img/clients/Kepler_Logo.png" alt="logo">
+                    </div>
+
+                    <div class="certi-content">
+                      <div class="certi-title">
+                        <h4>Kepler College</h4>
                       </div>
-                      <!-- End of Portfolio Content -->
+                      <div class="certi-id">
+                        <span>SCAD</span>
+                      </div>
+                      <div class="certi-date">
+                        <span>2023</span>
+                      </div>
+                      <div class="certi-company">
+                        <span></span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </section>
-              <!-- End of Portfolio Subpage -->
+                <!-- End of Certificate 2 -->
 
-              
-<!-- Student Subpage -->
-<section data-id="blog" class="animated-section">
-  <div class="section-content">
-    <div class="page-title">
-      <h4>Let's make learning fun! <br> Pick a quiz and see how sharp your brain really is!</h4>
-    </div>
+              </div>
 
-    <div id="quiz-list" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px;">
-      <a href="#c-programming" class="btn btn-outline-dark quiz-link">🧠 C Programming</a>
-      <a href="#iot" class="btn btn-outline-success quiz-link">📡 Internet of Things</a>
-      <a href="#php" class="btn btn-outline-primary quiz-link">🌐 IoT Web App with PHP</a>
-      <a href="#db" class="btn btn-outline-warning quiz-link">🗄️ Database Development</a>
-      <a href="#ml" class="btn btn-outline-info quiz-link">🤖 Machine Learning</a>
-      <a href="#python" class="btn btn-outline-secondary quiz-link">🐍 Python Programming</a>
-      <a href="#python-ml" class="btn btn-outline-danger quiz-link">🧪 Python for ML</a>
-    </div>
 
-    <div id="quiz-embed-container" style="margin-top: 30px;">
-      <div id="c-programming" class="quiz-embed">
-        <h5>C Programming Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
 
-      <div id="iot" class="quiz-embed">
-        <h5>Internet of Things Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
 
-      <div id="php" class="quiz-embed">
-        <h5>IoT Web App with PHP Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
 
-      <div id="db" class="quiz-embed">
-        <h5>Database Development Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
 
-      <div id="ml" class="quiz-embed">
-        <h5>Machine Learning Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="https://forms.gle/8podFJDNyDogA2hXA" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
 
-      <div id="python" class="quiz-embed">
-        <h5>Python Programming Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
 
-      <div id="python-ml" class="quiz-embed">
-        <h5>Python for ML Quiz</h5>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <!-- End of Certificates -->
+            </div>
+          </section>
+          <!-- End of Resume Subpage -->
+
+          <!-- Portfolio Subpage -->
+          <section data-id="portfolio" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Certification and Letters of Merit</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <!-- Portfolio Content -->
+                  <div class="portfolio-content">
+
+                    <ul class="portfolio-filters">
+                      <li class="active">
+                        <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_detailed">Networking-Based</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_mockups">Programming-Based</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">Languages-Based</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Soft-Skills-Based</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">Letters of Merit</a>
+                      </li>
+                    </ul>
+
+                    <!-- Certificate Grid -->
+
+                    <!-- <i class="fa fa-exclamation-triangle"></i>
+              <h4 class="name">Sorry this page is currently unavailable for a reason <br>(Soon to be updated)</h4>
+                -->
+
+                    <div class="portfolio-grid three-columns">
+                      <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/CCNA_Introduction_to_Networks_certificate.jpg"
+                            alt="Introduction to Networks" title="" />
+                          <a class="lightbox" title="Introduction to Networks"
+                            href="img/certi/CCNA_Introduction_to_Networks_certificate.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Introduction to Networks</h4>
+                        <span class="category">Networking</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg"
+                            alt="Switching Routing and Wireless Essentials" title="" />
+                          <a class="lightbox" title="Switching Routing and Wireless Essentials"
+                            href="img/certi/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Switching Routing and Wireless Essentials</h4>
+                        <span class="category">Networking</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/Cybersecurity_Essentials_certificate.jpg"
+                            alt="Cybersecurity Essentials certificate" title="" />
+                          <a class="lightbox" title="Cybersecurity Essentials certificate"
+                            href="img/certi/Cybersecurity_Essentials_certificate.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Cybersecurity Essentials certificate</h4>
+                        <span class="category">Networking</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_detailed"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/Network_Security_certificate.jpg" alt="Network Security" title="" />
+                          <a class="lightbox" title="Network Security"
+                            href="img/certi/Network_Security_certificate.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Network Security</h4>
+                        <span class="category">Networking</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/Programming_Essentials_in_Python_certificate.jpg"
+                            alt="Programming Essentials in Python" title="" />
+                          <a class="lightbox" title="Programming Essentials in Python"
+                            href="img/certi/Programming_Essentials_in_Python_certificate.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Programming Essentials in Python</h4>
+                        <span class="category">Programming</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_soundcloud"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/English_for_IT_2_certificate.jpg" alt="English for IT 2" title="" />
+                          <a class="lightbox" title="English for IT 2"
+                            href="img/certi/English_for_IT_2_certificate.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">English for IT 2</h4>
+                        <span class="category">Languages</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_vimeo-videos"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/SCAD-1/SCAD 1_page-0001.jpg" alt="Soft Skills and Carrer Development"
+                            title="" />
+                          <a class="lightbox" title="Soft Skills and Carrer Development"
+                            href="img/certi/SCAD-1/SCAD 1_page-0001.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">SCAD</h4>
+                        <span class="category">Soft skills</span>
+                      </figure>
+
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_youtube-videos"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_Introduct_Networks.jpg"
+                            alt="Introduction to Networks" title="" />
+                          <a class="lightbox" title="Introduction to Networks"
+                            href="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_Introduct_Networks.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Introduction to Networks</h4>
+                        <span class="category">Introduction to Networks</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_youtube-videos"]'>
+                        <div class="portfolio-item-img">
+                          <img
+                            src="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_1_Yr2A202_Switching_Routing.jpg"
+                            alt="Switching Routing and Wireless Essentials" title="" />
+                          <a class="lightbox" title="Switching Routing and Wireless Essentials"
+                            href="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_CCNAv7_1_Yr2A202_Switching_Routing.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Switching Routing and Wireless Essentials</h4>
+                        <span class="category">Switching Routing and Wireless Essentials</span>
+                      </figure>
+                      <figure class="item lbimage" data-groups='["category_all", "category_youtube-videos"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_Netacad_Summer_NetorkSecurity.jpg"
+                            alt="Network Security" title="" />
+                          <a class="lightbox" title="Network Security"
+                            href="img/certi/merit_letters/MPAYIMANA_CYIZA_LANDRY_Netacad_Summer_NetorkSecurity.jpg"></a>
+                        </div>
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Network Security</h4>
+                        <span class="category">Network Security</span>
+                      </figure>
+
+
+                    </div>
+                  </div>
+                  <!-- End of Portfolio Content -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Portfolio Subpage -->
+
+
+          <!-- Student Subpage -->
+          <section data-id="blog" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h4>Let's make learning fun! <br> Pick a quiz and see how sharp your brain really is!</h4>
+              </div>
+            </div>
+          </section>
+          <!-- End of student Subpage -->
+
+          <!-- Contact Subpage -->
+          <section data-id="contact" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Contact me</h2>
+              </div>
+
+              <div class="row">
+                <!-- Contact Info -->
+                <div class="col-xs-12 col-sm-4">
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-map-marker"></i>
+                    <h4>Musanze</h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-phone-handset"></i>
+                    <h4>+250 780 105 612</h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-envelope"></i>
+                    <h4>info@cyizalandry.com</h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-checkmark-circle"></i>
+                    <h4>Currently Available</h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+
+
+                </div>
+                <!-- End of Contact Info -->
+
+                <!-- Contact Form -->
+                <div class="col-xs-12 col-sm-8">
+                  <div id="map" class="map"></div>
+                  <div class="block-title">
+                    <h3>How Can I <span>Help You?</span></h3>
+                  </div>
+
+                  <form id="contact_form" class="contact-form" action="contact_form.php" method="post">
+                    <div class="messages"></div>
+
+                    <div class="controls two-columns">
+                      <div class="fields clearfix">
+                        <div class="left-column">
+                          <div class="form-group form-group-with-icon">
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder=""
+                              required="required" data-error="Name is required.">
+                            <label>Full Name</label>
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="form-group form-group-with-icon">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder=""
+                              required="required" data-error="Valid email is required.">
+                            <label>Email Address</label>
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="form-group form-group-with-icon">
+                            <input id="form_subject" type="text" name="subject" class="form-control" placeholder=""
+                              required="required" data-error="Subject is required.">
+                            <label>Subject</label>
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="right-column">
+                          <div class="form-group form-group-with-icon">
+                            <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7"
+                              required="required" data-error="Please, leave me a message."></textarea>
+                            <label>Message</label>
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Google reCAPTCHA -->
+                      <!-- <div class="g-recaptcha" data-sitekey="6Le1l_QqAAAAAICyxI8a8jJs1fD-vT5tiVW2mU1v" data-theme="dark"></div>
+                -->
+                      <!-- Submit button -->
+                      <input type="submit" class="button btn-send" value="Send message">
+                    </div>
+                  </form>
+
+
+                </div>
+                <!-- End of Contact Form -->
+              </div>
+
+            </div>
+          </section>
+          <!-- End of Contact Subpage -->
+
         </div>
       </div>
 
     </div>
   </div>
-</section>
-<!-- End of student Subpage -->
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/animating.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <script src='js/perfect-scrollbar.min.js'></script>
+  <script src='js/jquery.shuffle.min.js'></script>
+  <script src='js/masonry.pkgd.min.js'></script>
+  <script src='js/owl.carousel.min.js'></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+  <script src="js/jquery.googlemap.js"></script>
+  <script src="js/validator.js"></script>
+  <!-- <script src="js/svalidation.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
 
-              <!-- Contact Subpage -->
-              <section data-id="contact" class="animated-section">
-                <div class="section-content">  
-                  <div class="page-title">
-                    <h2>Contact me</h2>
-                  </div>
-
-                  <div class="row">
-                    <!-- Contact Info -->
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-map-marker"></i>
-                        <h4>Musanze</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-phone-handset"></i>
-                        <h4>+250 780 105 612</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-envelope"></i>
-                        <h4>info@cyizalandry.com</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-checkmark-circle"></i>
-                        <h4>Currently Available</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
-
-                    </div>
-                    <!-- End of Contact Info -->
-
-                    <!-- Contact Form -->
-                    <div class="col-xs-12 col-sm-8">
-                      <div id="map" class="map"></div>
-                      <div class="block-title">
-                        <h3>How Can I <span>Help You?</span></h3>
-                      </div>
-
-                      <form id="contact_form" class="contact-form" action="contact_form.php" method="post">
-                        <div class="messages"></div>
-                        
-                        <div class="controls two-columns">
-                            <div class="fields clearfix">
-                                <div class="left-column">
-                                    <div class="form-group form-group-with-icon">
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
-                                        <label>Full Name</label>
-                                        <div class="form-control-border"></div>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                    
-                                    <div class="form-group form-group-with-icon">
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
-                                        <label>Email Address</label>
-                                        <div class="form-control-border"></div>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                    
-                                    <div class="form-group form-group-with-icon">
-                                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
-                                        <label>Subject</label>
-                                        <div class="form-control-border"></div>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="right-column">
-                                    <div class="form-group form-group-with-icon">
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                                        <label>Message</label>
-                                        <div class="form-control-border"></div>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Google reCAPTCHA -->
-                            <!-- <div class="g-recaptcha" data-sitekey="6Le1l_QqAAAAAICyxI8a8jJs1fD-vT5tiVW2mU1v" data-theme="dark"></div>
-                             -->
-                            <!-- Submit button -->
-                            <input type="submit" class="button btn-send" value="Send message">
-                        </div>
-                    </form>
-                    
-                    
-                    </div>
-                    <!-- End of Contact Form -->
-                  </div>
-
-                </div>
-              </section>
-              <!-- End of Contact Subpage -->
-            </div>
-          </div>
-
-      </div>
-    </div>
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/animating.js"></script>
-
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
-
-    <script src='js/perfect-scrollbar.min.js'></script>
-    <script src='js/jquery.shuffle.min.js'></script>
-    <script src='js/masonry.pkgd.min.js'></script>
-    <script src='js/owl.carousel.min.js'></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-    <script src="js/jquery.googlemap.js"></script>
-    <script src="js/validator.js"></script>
-    <!-- <script src="js/svalidation.js"></script> -->
-    <script src="js/main.js"></script>
-  </body>
 </html>
