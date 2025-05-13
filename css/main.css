@@ -41,6 +41,8 @@ html {
   height: 100%;
   min-height: 100%;
   overflow: hidden;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
@@ -58,6 +60,17 @@ body {
   background-position: center;
   background-position: 50% 50%;
   background-size: cover;
+  padding: 0;
+  
+
+
+
+
+
+
+
+
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -530,36 +543,36 @@ input[type="submit"]:focus {
 }
 
 .animated-section {
-  position: absolute; 
-  background-color: transparent;
-  height: 100%;
+  position: absolute;
   width: 100%;
-  border-radius: 30px;
+  height: 100vh;            /* exactly one screen high */
   padding: 0;
   opacity: 0;
-  overflow: auto;
-  background-color: #fff;
   
-  /* scroll issue fixed */
-  
-  overflow-y:auto;
-  min-height: 100vh;
-  overflow-x:hidden;
-
-  /* gukemura scroll  issue */
-
+  overflow-y: auto;         /* scroll only when needed */
+  overflow-x: hidden;
   visibility: hidden;
+  border-radius: 30px;
+  background-color: transparent; /* section background */
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
-  background-size: cover;
 }
+
+.animated-section .section-content {
+  max-height: 100vh;   /* can fill viewport */
+  overflow-y: auto;    /* scroll if content taller */
+  overflow-x: hidden;
+}
+
+
 
 .section-content {
   background-color: #fff;
@@ -589,10 +602,11 @@ input[type="submit"]:focus {
 .section-active,
 .no-js .animated-section {
   opacity: 1;
-  overflow: auto;
   visibility: visible;
   z-index: 99;
+  overflow-y: auto;
 }
+
 
 /* --- Custom ScrollBar Customization --- */
 .ps>.ps__scrollbar-y-rail {
@@ -2324,8 +2338,10 @@ blockquote {
   .animated-section,
   .single-page-content {
     border-radius: 0;
-    overflow: auto !important;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
+  
 
   .header-titles h2 {
     font-size: 30px;
