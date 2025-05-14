@@ -1193,11 +1193,18 @@
           <!-- Student Subpage -->
           <section data-id="blog" class="animated-section">
             <div class="section-content">
-              <div class="page-title">
-                <h4>Let's make learning fun! <br> Pick a quiz and see how sharp your brain really is!</h4>
-              </div>
+                <div class="page-title">
+                    <h4>Let's make learning fun! <br> Pick a quiz and see how sharp your brain really is!</h4>
+                    <button onclick="openKiosk('https://forms.gle/VNGACPsjf8GGarru5')">Take the Quiz!</button>
+                </div>
             </div>
-          </section>
+        </section>
+        
+        <script>
+        function openKiosk(formLink) {
+          window.open(formLink, '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=600,height=800');
+        }
+        </script>
           <!-- End of student Subpage -->
 
           <!-- Contact Subpage -->
