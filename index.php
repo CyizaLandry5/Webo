@@ -13,7 +13,7 @@ Website: www.cyizalandry.com
     <!-- Links -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="photos/mine.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Portfolio | MC Landry</title>
 </head>
@@ -90,15 +90,15 @@ Website: www.cyizalandry.com
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="images/avatar.jpg" alt="avatar">
+                        <img src="photos/mine.jpg" alt="avatar">
                     </div>
                 </div>
-                <div class="scroll-icon-box">
+                <!-- <div class="scroll-icon-box">
                     <a href="#about" class="scroll-btn">
                         <i class="uil uil-mouse-alt"></i>
                         <p>Scroll Down</p>
                     </a>
-                </div>
+                </div> -->
             </section>
             <!-- -- About Section -- -->
             <section class="section" id="about">
