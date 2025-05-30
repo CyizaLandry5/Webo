@@ -1,6 +1,6 @@
 <?php
 // Database configuration
-$host = "cyizalandry.com";
+$host = "localhost";
 $user = "u515424954_CyizaLandry";
 $password = "Mpayimana@11111"; 
 $database = "u515424954_my_webp";
