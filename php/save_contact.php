@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$host = "localhost";
-$user = "root";
-$password = ""; // Change if needed
-$database = "my_webp";
+$host = "cyizalandry.com";
+$user = "u515424954_CyizaLandry";
+$password = "Mpayimana@11111"; 
+$database = "u515424954_my_webp";
 
 // Create database connection
 $conn = new mysqli($host, $user, $password, $database);

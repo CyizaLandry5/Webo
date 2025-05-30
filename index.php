@@ -23,6 +23,8 @@ Website: www.cyizalandry.com
         <!-- -- Navigation Section -- -->
         <nav id="header">
             <div class="nav-logo">
+                <!-- <p class="nav-name">S</p> -->
+                
                 <p class="nav-name">Landry</p>
                 <span>.</span>
             </div>
