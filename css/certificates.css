@@ -1,0 +1,121 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Section Styling */
+#Certificates {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+/* Header */
+.top-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top-header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Grid Layout */
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Box */
+.certificate-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.certificate-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Image */
+.image-wrapper {
+    height: 180px;
+    overflow: hidden;
+}
+
+.certificate-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Info Section */
+.certificate-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.certificate-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.certificate-info p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .top-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .certificate-info p {
+        font-size: 0.9rem;
+    }
+}

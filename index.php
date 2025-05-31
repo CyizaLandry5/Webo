@@ -15,6 +15,7 @@ Website: www.cyizalandry.com
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="photos/mine.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/certificates.css">
     <title>Portfolio | MC Landry</title>
 </head>
 
@@ -42,8 +43,14 @@ Website: www.cyizalandry.com
                         <a href="#projects" class="nav-link">Projects</a>
                         <div class="circle"></div>
                     </li>
+
                     <li class="nav_list">
                         <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+
+                    <li class="nav_list">
+                        <a href="#Certificates" class="nav-link">Credentials</a>
                         <div class="circle"></div>
                     </li>
                 </ul>
@@ -248,6 +255,55 @@ Website: www.cyizalandry.com
     </section>
 </form>
 
+<!-- -- CERTIFICATES SECTION -- -->
+
+<section id="Certificates">
+    <div class="top-header">
+        <h1>My Certifications</h1>
+        <p class="subtitle">Professional credentials in Programming, Networking, Soft Skills and more.</p>
+    </div>
+
+    <div class="certificate-container">
+        <!-- Certificate 1 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/Programming_Essentials_in_Python_certificate.jpg" alt="Python" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>Python Programming Essentials</h3>
+                <p>Programming Essentials in Python certificate</p>
+                <a href="photos/certificates/Programming_Essentials_in_Python_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/Cybersecurity_Essentials_certificate.jpg" alt="Interaction Design" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>Cybersecurity Essentials</h3>
+                <p>Cybersecurity Essentials.</p>
+                <a href="photos/certificates/Cybersecurity_Essentials_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/Network_Security_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>Network Security</h3>
+                <p>Network Security.</p>
+                <a href="photos/certificates/Network_Security_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
         </main>
         <!-- -- Footer -- -->
         <footer>
@@ -265,8 +321,13 @@ Website: www.cyizalandry.com
                     <li class="footer_menu_list">
                         <a href="#projects">Projects</a>
                     </li>
+
                     <li class="footer_menu_list">
                         <a href="#contact">Contact</a>
+                    </li>
+
+                    <li class="footer_menu_list">
+                        <a href="#Certificates">Credentials</a>
                     </li>
                 </ul>
             </div>
