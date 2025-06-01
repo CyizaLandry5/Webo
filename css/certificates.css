@@ -119,3 +119,36 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Dark mode styles for the Certificates section */
+body.dark #Certificates { /* cite: 1 */
+    background-color: #1a1a1a; /* Dark background */ /* cite: 1 */
+    color: #f0f0f0; /* Light text */ /* cite: 1 */
+}
+
+body.dark .top-header h1 { /* cite: 1 */
+    color: #f0f0f0; /* Light text for header */ /* cite: 1 */
+}
+
+body.dark .subtitle { /* cite: 1 */
+    color: #ccc; /* Lighter text for subtitle */ /* cite: 1 */
+}
+
+body.dark .certificate-box { /* cite: 1 */
+    background-color: #2b2b2b; /* Darker background for individual boxes */ /* cite: 1 */
+    border: 1px solid #444; /* cite: 1 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* cite: 1 */
+}
+
+body.dark .certificate-info h3 { /* cite: 1 */
+    color: #f0f0f0; /* cite: 1 */
+}
+
+body.dark .certificate-info p { /* cite: 1 */
+    color: #ccc; /* cite: 1 */
+}
+
+body.dark .certificate-info .btn { /* cite: 1 */
+    background-color: #0056b3; /* Darker button color */ /* cite: 1 */
+    color: #fff; /* cite: 1 */
+}
