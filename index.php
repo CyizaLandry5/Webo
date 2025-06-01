@@ -44,13 +44,15 @@ Website: www.cyizalandry.com
                         <div class="circle"></div>
                     </li>
 
+                    
+
                     <li class="nav_list">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#Certificates" class="nav-link">Credentials</a>
                         <div class="circle"></div>
                     </li>
 
                     <li class="nav_list">
-                        <a href="#Certificates" class="nav-link">Credentials</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                         <div class="circle"></div>
                     </li>
                 </ul>
@@ -222,39 +224,7 @@ Website: www.cyizalandry.com
                     </div>
                 </div>
             </section>
-            <!-- -- CONTACT BOX -- -->
-           <form action="php/save_contact.php" method="POST">
-    <section class="section" id="contact">
-        <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Have an idea for a project? Let&rsquo;s turn it into reality! Contact me here, and let&rsquo;s get started.</span>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: info@cyizalandry.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +250 780 105 612</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" name="client_name" placeholder="Name" required>
-                        <input type="email" class="input-field" name="client_email" placeholder="Email" required>
-                    </div>
-                    <div class="text-area">
-                        <textarea name="client_message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</form>
-
+        
 <!-- -- CERTIFICATES SECTION -- -->
 
 <section id="Certificates">
@@ -301,6 +271,41 @@ Website: www.cyizalandry.com
         </div>
     </div>
 </section>
+
+            <!-- -- CONTACT BOX -- -->
+           <form action="php/save_contact.php" method="POST">
+    <section class="section" id="contact">
+        <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Have an idea for a project? Let&rsquo;s turn it into reality! Contact me here, and let&rsquo;s get started.</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: info@cyizalandry.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +250 780 105 612</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" name="client_name" placeholder="Name" required>
+                        <input type="email" class="input-field" name="client_email" placeholder="Email" required>
+                    </div>
+                    <div class="text-area">
+                        <textarea name="client_message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+
+
 
 
 
