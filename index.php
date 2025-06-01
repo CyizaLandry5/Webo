@@ -53,6 +53,7 @@ Website: www.cyizalandry.com
                     
                     <li class="nav_list">
                         <a href="student/SacuredQuiz" class="nav-link">Skill Up</a>
+                        
                         <div class="circle"></div>
                     </li>
 
