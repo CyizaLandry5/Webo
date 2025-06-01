@@ -229,7 +229,7 @@ Website: www.cyizalandry.com
 
 <section id="Certificates">
     <div class="top-header">
-        <h1>My Certifications</h1>
+        <h1>Some of my certificates</h1>
         <p class="subtitle">Professional credentials in Programming, Networking, Soft Skills and more.</p>
     </div>
 
