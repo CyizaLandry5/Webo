@@ -52,7 +52,7 @@ Website: www.cyizalandry.com
                     </li>
                     
                     <li class="nav_list">
-                        <a href="student/SafeQuiz.php" class="nav-link">Skill Up</a>
+                        <a href="student/SacuredQuiz" class="nav-link">Skill Up</a>
                         <div class="circle"></div>
                     </li>
 
