@@ -16,7 +16,7 @@ Website: www.cyizalandry.com
     <link rel="shortcut icon" href="photos/mine.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/certificates.css">
-    <title>Portfolio | M CYIZA Landry</title>
+    <title>Portfolio | M CYIZA Landry.</title>
 </head>
 
 <body>
@@ -50,14 +50,18 @@ Website: www.cyizalandry.com
                         <a href="#Certificates" class="nav-link">Credentials</a>
                         <div class="circle"></div>
                     </li>
+                    
+                    <li class="nav_list">
+                        <a href="student/SafeQuiz.php" class="nav-link">Skill Up</a>
+                        <div class="circle"></div>
+                    </li>
 
                     <li class="nav_list">
                         <a href="#contact" class="nav-link">Contact</a>
                         <div class="circle"></div>
                     </li>
 
-                    <li class="nav_list">
-                        <a href=>
+                    
                 </ul>
             </div>
             <div class="nav-button">
@@ -336,11 +340,13 @@ Website: www.cyizalandry.com
                     </li>
 
                     <li class="footer_menu_list">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="footer_menu_list">
                         <a href="student/SafeQuiz.php">Skill Up</a>
                     </li>
+
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    
                 </ul>
             </div>
             <div class="footer-social-icons">
