@@ -340,7 +340,7 @@ Website: www.cyizalandry.com
                     </li>
 
                     <li class="footer_menu_list">
-                        <a href="student/SecureQuiz">Skill Up</a>
+                        <a href="student/SecuredQuiz">Skill Up</a>
                     </li>
 
                     <li class="footer_menu_list">
