@@ -55,6 +55,9 @@ Website: www.cyizalandry.com
                         <a href="#contact" class="nav-link">Contact</a>
                         <div class="circle"></div>
                     </li>
+
+                    <li class="nav_list">
+                        <a href=>
                 </ul>
             </div>
             <div class="nav-button">
@@ -334,6 +337,9 @@ Website: www.cyizalandry.com
 
                     <li class="footer_menu_list">
                         <a href="#contact">Contact</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="student/SafeQuiz.php">Skill Up</a>
                     </li>
                 </ul>
             </div>
