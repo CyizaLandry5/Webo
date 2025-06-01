@@ -327,12 +327,13 @@ Website: www.cyizalandry.com
                         <a href="#projects">Projects</a>
                     </li>
 
+                    
                     <li class="footer_menu_list">
-                        <a href="#contact">Contact</a>
+                        <a href="#Certificates">Credentials</a>
                     </li>
 
                     <li class="footer_menu_list">
-                        <a href="#Certificates">Credentials</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
