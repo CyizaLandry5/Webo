@@ -1,0 +1,12 @@
+[2025-06-03 15:55:25] [python] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-03 15:56:07] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 15:56:30] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 15:57:41] [python] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-03 15:57:52] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 15:58:12] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 15:59:29] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 15:59:59] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 16:01:03] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 16:01:39] [python] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-03 16:01:39] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 16:01:55] [web] IRAKOZE MARIE CHANTAL - Tab switch or minimized

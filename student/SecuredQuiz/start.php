@@ -1,9 +1,35 @@
 <?php
+session_start();
 require_once 'config/settings.php';
 
 $topic = $_GET['topic'] ?? '';
 if (!isset($quizzes[$topic])) {
     echo "<h2>Invalid quiz topic.</h2>";
+    exit;
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'])) {
+    $_SESSION['student_name'] = trim($_POST['name']);
+} elseif (!isset($_SESSION['student_name'])) {
+    // Show the name entry form and stop the script here
+    echo '
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Enter Your Name - SafeQuiz</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST">
+                <h2>Enter Your Name</h2>
+                <input type="text" name="name" required placeholder="Your full name">
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+    </body>
+    </html>';
     exit;
 }
 
@@ -25,8 +51,7 @@ $duration = $quiz['duration'] * 60; // seconds
       const countdown = setInterval(() => {
         if (timeLeft <= 0) {
           clearInterval(countdown);
-          alert("Time's up!");
-          document.exitFullscreen?.();
+          window.location.href = "submit.php";
         } else {
           let min = Math.floor(timeLeft / 60);
           let sec = timeLeft % 60;
@@ -47,15 +72,27 @@ $duration = $quiz['duration'] * 60; // seconds
       }
     }
 
+    function logCheating(reason) {
+      fetch("log_cheat.php?topic=<?php echo $topic; ?>", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "reason=" + encodeURIComponent(reason)
+      });
+    }
+
     function warnOnFocusLoss() {
       document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
           alert("Warning: Do not switch tabs or minimize the window during the quiz!");
+          logCheating("Tab switch or minimized");
         }
       });
 
       window.addEventListener("blur", () => {
         alert("Warning: You switched away from the quiz window.");
+        logCheating("Window blur");
       });
     }
 
