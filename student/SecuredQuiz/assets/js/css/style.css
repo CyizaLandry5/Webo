@@ -1,67 +1,75 @@
-body {
+/* assets/css/style.css */
+
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #026b88, #0072ff);
+  color: #000000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .container {
-  max-width: 800px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
 }
 
-h1, h2 {
-  color: #007BFF;
-  text-align: center;
+h1 {
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 600;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
 }
 
-ul li {
+li {
   margin: 15px 0;
-  text-align: center;
 }
 
-ul li a {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-ul li a:hover {
-  background-color: #0056b3;
-}
-
-button#startBtn {
-  padding: 12px 28px;
-  font-size: 16px;
-  background-color: #28a745;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
+a {
   display: block;
-  margin: 30px auto 0;
+  background-color: #ffffff22;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-button#startBtn:hover {
-  background-color: #218838;
+a:hover {
+  background-color: #ffffff33;
+  transform: translateY(-2px);
 }
 
-#timer {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #dc3545;
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  a {
+    font-size: 0.95em;
+    padding: 10px 16px;
+  }
 }
