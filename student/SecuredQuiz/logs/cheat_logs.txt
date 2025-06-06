@@ -28,3 +28,19 @@
 [2025-06-06 18:19:14] [python1] IRAKOZE MARIE CHANTAL - Window blur
 [2025-06-06 18:19:20] [python1] IRAKOZE MARIE CHANTAL - Window blur
 [2025-06-06 18:19:23] [python1] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 19:48:51] [ml1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 19:49:26] [ml1] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 19:49:26] [ml1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 19:49:38] [ml2] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 19:49:38] [ml2] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 19:49:44] [ml3] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 19:49:44] [ml3] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 20:00:22] [ml3] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 20:00:57] [ml3] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 20:02:15] [ml3] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 20:02:17] [ml2] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 20:02:34] [ml3] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 20:02:41] [ml3] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 20:03:01] [ml1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 20:03:01] [ml1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 20:03:01] [ml1] IRAKOZE MARIE CHANTAL - Tab switch or minimized

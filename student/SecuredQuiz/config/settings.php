@@ -25,12 +25,12 @@ $quizzes = [
   "ml2" => [
     "title" => "Develop Machine Learning Model",
     "duration" => 30,
-    "form_url" => "https://example.com/web-quiz-form"
+    "form_url" => "https://forms.gle/NBNDjiUyYt5J6wNw8"
   ],
   "ml3" => [
     "title" => "Perform Model deployment",
     "duration" => 30,
-    "form_url" => "https://example.com/web-quiz-form"
+    "form_url" => "https://forms.gle/MdDhZTvsWFbcFVnX7"
   ]
 ];
 ?>
