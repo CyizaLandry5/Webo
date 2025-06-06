@@ -50,12 +50,16 @@ Website: www.cyizalandry.com
                         <a href="#Certificates" class="nav-link">Credentials</a>
                         <div class="circle"></div>
                     </li>
-                    
                     <li class="nav_list">
+  <a href="#" class="nav-link" onclick="confirmRedirect(event)">Skill Up</a>
+  <div class="circle"></div>
+</li>
+                    
+                    <!-- <li class="nav_list">
                         <a href="student/SecuredQuiz" class="nav-link">Skill Up</a>
 
                         <div class="circle"></div>
-                    </li>
+                    </li> -->
 
                     <li class="nav_list">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -339,10 +343,14 @@ Website: www.cyizalandry.com
                     <li class="footer_menu_list">
                         <a href="#Certificates">Credentials</a>
                     </li>
+                    <li class="nav_list">
+  <a href="#" class="nav-link" onclick="confirmRedirect(event)">Skill Up</a>
+  <div class="circle"></div>
+</li>
 
-                    <li class="footer_menu_list">
+                    <!-- <li class="footer_menu_list">
                         <a href="student/SecuredQuiz">Skill Up</a>
-                    </li>
+                    </li> -->
 
                     <li class="footer_menu_list">
                         <a href="#contact">Contact</a>
@@ -369,6 +377,7 @@ Website: www.cyizalandry.com
     <script src="js/script.js"></script>
     <script src="js/cv_actions.js"></script>
     <script src="js/status.js"></script>
+    <script src="js/studentconf.js"></script>
 
 </body>
 
