@@ -343,6 +343,7 @@ Website: www.cyizalandry.com
                     <li class="footer_menu_list">
                         <a href="#Certificates">Credentials</a>
                     </li>
+                    
                     <li class="nav_list">
   <a href="#" class="nav-link" onclick="confirmRedirect(event)">Skill Up</a>
   <div class="circle"></div>
