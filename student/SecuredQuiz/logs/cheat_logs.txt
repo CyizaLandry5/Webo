@@ -1,12 +1,22 @@
-[2025-06-03 15:55:25] [python] IRAKOZE MARIE CHANTAL - Window blur
-[2025-06-03 15:56:07] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 15:56:30] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 15:57:41] [python] IRAKOZE MARIE CHANTAL - Window blur
-[2025-06-03 15:57:52] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 15:58:12] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 15:59:29] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 15:59:59] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 16:01:03] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 16:01:39] [python] IRAKOZE MARIE CHANTAL - Window blur
-[2025-06-03 16:01:39] [python] IRAKOZE MARIE CHANTAL - Tab switch or minimized
-[2025-06-03 16:01:55] [web] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-03 19:45:23] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:45:24] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-03 19:45:25] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:45:25] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:45:28] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:45:30] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:45:30] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-03 19:45:37] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:45:37] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-03 19:46:18] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-03 19:46:18] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-04 09:09:25] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-04 09:09:25] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-04 09:09:55] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-04 09:09:58] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-04 09:10:01] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-04 09:10:04] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-04 09:10:27] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-04 09:11:27] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-04 10:24:54] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-04 10:24:55] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
+[2025-06-04 10:24:55] [python] MPAYIMANA CYIZA Landry - Window blur

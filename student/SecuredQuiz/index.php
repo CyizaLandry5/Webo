@@ -10,8 +10,10 @@
     <h1>Select a Quiz</h1>
     <ul>
       <li><a href="start.php?topic=python">Python Basics</a></li>
+      
       <li><a href="start.php?topic=web">Web Development</a></li>
       <li><a href="start.php?topic=networking">Networking Essentials</a></li>
+
     </ul>
   </div>
 </body>

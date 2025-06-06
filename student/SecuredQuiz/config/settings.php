@@ -2,7 +2,7 @@
 $quizzes = [
   "python" => [
     "title" => "Python Basics",
-    "duration" => 10,
+    "duration" => 1,
     "form_url" => "https://forms.gle/8LKQCJT1zozXwezE6"
   ],
   "web" => [
