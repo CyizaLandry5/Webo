@@ -1,19 +1,36 @@
 <?php
 $quizzes = [
-  "python" => [
-    "title" => "Python Basics",
-    "duration" => 1,
-    "form_url" => "https://forms.gle/8LKQCJT1zozXwezE6"
+  "python1" => [
+    "title" => "Prepare python environment",
+    "duration" => 60,
+    "form_url" => "https://forms.gle/PdMzoVY5QPbc9X5B6"
   ],
-  "web" => [
-    "title" => "Web Development",
+  "python2" => [
+    "title" => "Write basic python program",
+    "duration" => 40,
+    "form_url" => "https://forms.gle/pV6NF6A56MgnArGU7"
+  ],
+
+  "python3" => [
+    "title" => "Apply object driven in python",
+    "duration" => 50,
+    "form_url" => "https://forms.gle/YfreLfoEcPPrKDzW7"
+  ],
+
+  "ml1" => [
+    "title" => "Apply data Pre-processing",
+    "duration" => 30,
+    "form_url" => "https://forms.gle/s2scii2JzBUPg5Sp8"
+  ],
+  "ml2" => [
+    "title" => "Develop Machine Learning Model",
     "duration" => 30,
     "form_url" => "https://example.com/web-quiz-form"
   ],
-  "networking" => [
-    "title" => "Networking Essentials",
+  "ml3" => [
+    "title" => "Perform Model deployment",
     "duration" => 30,
-    "form_url" => "https://example.com/networking-quiz"
+    "form_url" => "https://example.com/web-quiz-form"
   ]
 ];
 ?>

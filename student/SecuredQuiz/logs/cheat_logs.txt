@@ -20,3 +20,11 @@
 [2025-06-04 10:24:54] [python] MPAYIMANA CYIZA Landry - Window blur
 [2025-06-04 10:24:55] [python] MPAYIMANA CYIZA Landry - Tab switch or minimized
 [2025-06-04 10:24:55] [python] MPAYIMANA CYIZA Landry - Window blur
+[2025-06-06 18:17:13] [python1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 18:17:51] [python1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 18:18:08] [python1] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 18:19:05] [python1] IRAKOZE MARIE CHANTAL - Tab switch or minimized
+[2025-06-06 18:19:09] [python1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 18:19:14] [python1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 18:19:20] [python1] IRAKOZE MARIE CHANTAL - Window blur
+[2025-06-06 18:19:23] [python1] IRAKOZE MARIE CHANTAL - Tab switch or minimized
