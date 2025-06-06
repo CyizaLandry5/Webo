@@ -31,6 +31,24 @@ $quizzes = [
     "title" => "Perform Model deployment",
     "duration" => 30,
     "form_url" => "https://forms.gle/MdDhZTvsWFbcFVnX7"
+    ],
+
+  "etepython1" => [
+    "title" => "ETE-Prepare python environment",
+    "duration" => 60,
+    "form_url" => "https://forms.gle/zULL3oatPbSJrG6g8"
+    ],
+  "etepython2" => [
+    "title" => "ETE-Write basic python program",
+    "duration" => 40,
+    "form_url" => "https://forms.gle/biehQNZpUwHL53a39"
+    ],
+  "etepython3" => [
+    "title" => "ETE-Apply object driven in python",
+    "duration" => 50,
+    "form_url" => "https://forms.gle/8E8LVp9TktHpYojM8"
   ]
+  
+
 ];
 ?>
