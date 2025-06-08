@@ -16,7 +16,7 @@ Website: www.cyizalandry.com
     <link rel="shortcut icon" href="photos/mine.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/certificates.css">
-    <title>Portfolio | M CYIZA Landry.</title>
+    <title>Portfolio | MPAYIMANA CYIZA Landry.</title>
 </head>
 
 <body>
