@@ -51,7 +51,7 @@ Website: www.cyizalandry.com
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
-  <a href="#" class="nav-link" onclick="confirmRedirect(event)">Skill Up</a>
+  <a href="#" class="nav-link" onclick="confirmRedirect(event)">Skill-Up</a>
   <div class="circle"></div>
 </li>
                     
