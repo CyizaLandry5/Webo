@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
 // Database configuration
 $host = "localhost";
 $user = "u515424954_CyizaLandry";
@@ -16,7 +17,8 @@ if ($conn->connect_error) {
 }
 
 // Fetch all contacts
-$sql = "SELECT id, name, email, message, created_at FROM contacts ORDER BY created_at DESC";
+// $sql = "SELECT id, name, email, message, created_at FROM contacts ORDER BY created_at DESC";
+$sql = "SELECT id, name, email, message FROM contacts";
 $result = $conn->query($sql);
 ?>
 
@@ -50,7 +52,7 @@ $result = $conn->query($sql);
                 <th>Name</th>
                 <th>Email</th>
                 <th>Message</th>
-                <th>Date</th>
+                <!-- <th>Date</th> -->
             </tr>
             <?php while ($row = $result->fetch_assoc()): ?>
                 <tr>
@@ -58,7 +60,7 @@ $result = $conn->query($sql);
                     <td><?= htmlspecialchars($row["name"]) ?></td>
                     <td><?= htmlspecialchars($row["email"]) ?></td>
                     <td><?= nl2br(htmlspecialchars($row["message"])) ?></td>
-                    <td><?= htmlspecialchars($row["created_at"]) ?></td>
+                    <!-- <td><?= htmlspecialchars($row["created_at"]) ?></td> -->
                 </tr>
             <?php endwhile; ?>
         </table>
