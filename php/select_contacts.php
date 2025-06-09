@@ -17,8 +17,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch all contacts
-// $sql = "SELECT id, name, email, message, created_at FROM contacts ORDER BY created_at DESC";
-$sql = "SELECT id, name, email, message FROM contacts";
+$sql = "SELECT id, name, email, message, submitted_at FROM contacts ORDER BY submitted_at DESC";
 $result = $conn->query($sql);
 ?>
 
@@ -29,7 +28,7 @@ $result = $conn->query($sql);
     <style>
         table {
             border-collapse: collapse;
-            width: 90%;
+            width: 95%;
             margin: 20px auto;
         }
         th, td {
@@ -40,6 +39,17 @@ $result = $conn->query($sql);
         th {
             background-color: #333;
             color: white;
+        }
+        .delete-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .delete-button:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
@@ -52,7 +62,8 @@ $result = $conn->query($sql);
                 <th>Name</th>
                 <th>Email</th>
                 <th>Message</th>
-                <!-- <th>Date</th> -->
+                <th>Submitted At</th>
+                <th>Action</th>
             </tr>
             <?php while ($row = $result->fetch_assoc()): ?>
                 <tr>
@@ -60,7 +71,13 @@ $result = $conn->query($sql);
                     <td><?= htmlspecialchars($row["name"]) ?></td>
                     <td><?= htmlspecialchars($row["email"]) ?></td>
                     <td><?= nl2br(htmlspecialchars($row["message"])) ?></td>
-                    <!-- <td><?= htmlspecialchars($row["created_at"]) ?></td> -->
+                    <td><?= htmlspecialchars($row["submitted_at"]) ?></td>
+                    <td>
+                        <form method="POST" action="delete_contact.php" onsubmit="return confirm('Are you sure you want to delete this message?');">
+                            <input type="hidden" name="delete_id" value="<?= $row["id"] ?>">
+                            <button type="submit" class="delete-button">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             <?php endwhile; ?>
         </table>
