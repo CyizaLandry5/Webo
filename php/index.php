@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $conn->close();
 ?>
 
-<form method="POST">
+<form method="POST" action="index.php">
     <h2>🔐 Admin Login</h2>
     <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
     <input type="text" name="username" placeholder="Username" required><br><br>
