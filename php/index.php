@@ -18,11 +18,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->bind_result($id, $hashed_password, $role);
         $stmt->fetch();
 
-        // Try both hashed and plain (testing mode)
+        // TEMPORARY fallback to plain text for testing
         $is_valid = password_verify($password, $hashed_password) || $password === $hashed_password;
 
         if ($is_valid && $role === 'admin') {
             $_SESSION['admin'] = $username;
+
+            // Log login
+            $log_stmt = $conn->prepare("INSERT INTO logs (username, action) VALUES (?, 'Logged in')");
+            $log_stmt->bind_param("s", $username);
+            $log_stmt->execute();
+            $log_stmt->close();
+
             header("Location: dashboard.php");
             exit;
         } else {
