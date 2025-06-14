@@ -20,8 +20,8 @@ if (!isset($_SESSION['admin'])) {
     <a href="view_logs.php"><button>View Logs</button></a>
     <a href="select_contacts.php"><button>Select Contacts</button></a>
     <!-- <a href="save_contact.php"><button>Save Contacts</button></a> -->
-    <a href="describe_contacts.php"><button>DESC CONTACT</button></a>
-    <a href="delete_contact.php"><button>DELETE CONTACT</button></a>
+    <!-- <a href="describe_contacts.php"><button>DESC CONTACT</button></a> -->
+    <!-- <a href="delete_contact.php"><button>DELETE CONTACT</button></a> -->
     
     <a href="logout.php"><button>Logout</button></a>
 </body>
