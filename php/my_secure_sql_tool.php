@@ -1,10 +1,10 @@
 <?php
 
-session_start();
-if (!isset($_SESSION['admin'])) {
-    header("Location: index.php"); // now points to your renamed login page
-    exit;
-}
+// session_start();
+// if (!isset($_SESSION['admin'])) {
+//     header("Location: index.php"); // now points to your renamed login page
+//     exit;
+// }
  
 // ==== CONFIGURATION ====
 // Set your secret password
