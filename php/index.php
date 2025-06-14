@@ -3,6 +3,8 @@ session_start();
 $conn = new mysqli("localhost", "u515424954_CyizaLandry", "Mpayimana@11111", "u515424954_my_webp");
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
+$error = "";
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
@@ -16,9 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->bind_result($id, $hashed_password, $role);
         $stmt->fetch();
 
-        if (password_verify($password, $hashed_password) && $role === 'admin') {
+        // Try both hashed and plain (testing mode)
+        $is_valid = password_verify($password, $hashed_password) || $password === $hashed_password;
+
+        if ($is_valid && $role === 'admin') {
             $_SESSION['admin'] = $username;
-            header("Location: my_secure_sql_tool.php");
+            header("Location: dashboard.php");
             exit;
         } else {
             $error = "Invalid credentials or not an admin.";
@@ -31,10 +36,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $conn->close();
 ?>
 
-<form method="POST" action="index.php">
-    <h2>🔐 Admin Login</h2>
-    <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
-    <input type="text" name="username" placeholder="Username" required><br><br>
-    <input type="password" name="password" placeholder="Password" required><br><br>
-    <button type="submit">Login</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+</head>
+<body>
+    <form method="POST" action="index.php">
+        <h2>🔐 Admin Login</h2>
+        <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+        <input type="text" name="username" placeholder="Username" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
