@@ -281,6 +281,28 @@ Website: www.cyizalandry.com
                 <a href="photos/certificates/Network_Security_certificate.jpg" class="btn" target="_blank">View Certificate</a>
             </div>
         </div>
+        <!-- Certificate 4 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/Network_Security_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>English</h3>
+                <p>English For IT 2</p>
+                <a href="photos/certificates/English_for_IT_2_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
+        <!-- Certificate 5 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/Network_Security_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>Network Security</h3>
+                <p>Network Security.</p>
+                <a href="photos/certificates/Network_Security_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
     </div>
 </section>
 
