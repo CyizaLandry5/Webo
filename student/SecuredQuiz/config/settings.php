@@ -47,8 +47,6 @@ $quizzes = [
     "title" => "ETE-Apply object driven in python",
     "duration" => 50,
     "form_url" => "https://forms.gle/8E8LVp9TktHpYojM8"
-  ]
-  
+    ]];
 
-];
 ?>
