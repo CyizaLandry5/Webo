@@ -65,8 +65,8 @@ $result = $conn->query($sql);
     <?php if ($result->num_rows > 0): ?>
         <table>
             <tr>
-                <th>#</th>
-                <th>Name</th>
+                <th>S/N</th>
+                <th>Client Name</th>
                 <th>Email</th>
                 <th>Message</th>
                 <th>Submitted At</th>
