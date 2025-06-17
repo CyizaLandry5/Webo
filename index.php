@@ -303,6 +303,17 @@ Website: www.cyizalandry.com
                 <a href="photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg" class="btn" target="_blank">View Certificate</a>
             </div>
         </div>
+        <!-- Certificate 6 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>Networking</h3>
+                <p>Introduction to Networks</p>
+                <a href="photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
     </div>
 </section>
 
