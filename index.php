@@ -281,6 +281,17 @@ Website: www.cyizalandry.com
                 <a href="photos/certificates/Network_Security_certificate.jpg" class="btn" target="_blank">View Certificate</a>
             </div>
         </div>
+        <!-- Certificate 31 -->
+        <div class="certificate-box">
+            <div class="image-wrapper">
+                <img src="photos/certificates/SCAD-1/SCAD 1_page-0001.jpg" alt="Python" class="certificate-thumbnail">
+            </div>
+            <div class="certificate-info">
+                <h3>Soft Skills</h3>
+                <p>Soft Skills and Carrer Development</p>
+                <a href="photos/certificates/SCAD-1/SCAD 1_page-0001.jpg" class="btn" target="_blank">View Certificate</a>
+            </div>
+        </div>
         <!-- Certificate 4 -->
         <div class="certificate-box">
             <div class="image-wrapper">
