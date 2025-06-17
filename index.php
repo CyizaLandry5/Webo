@@ -105,7 +105,7 @@ Website: www.cyizalandry.com
                                 class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
-                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><a href="cyizalandry.com"></a><i class="uil uil-instagram"></a></i></div>
                         <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
                         <div class="icon"><i class="uil uil-dribbble"></i></div>
                         <div class="icon"><i class="uil uil-github-alt"></i></div>
