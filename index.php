@@ -284,7 +284,7 @@ Website: www.cyizalandry.com
         <!-- Certificate 4 -->
         <div class="certificate-box">
             <div class="image-wrapper">
-                <img src="photos/certificates/Network_Security_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
+                <img src="photos/certificates/English_for_IT_2_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
             </div>
             <div class="certificate-info">
                 <h3>English</h3>
@@ -295,12 +295,12 @@ Website: www.cyizalandry.com
         <!-- Certificate 5 -->
         <div class="certificate-box">
             <div class="image-wrapper">
-                <img src="photos/certificates/Network_Security_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
+                <img src="photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg" alt="Adobe XD Certificate" class="certificate-thumbnail">
             </div>
             <div class="certificate-info">
-                <h3>Network Security</h3>
-                <p>Network Security.</p>
-                <a href="photos/certificates/Network_Security_certificate.jpg" class="btn" target="_blank">View Certificate</a>
+                <h3>Networking</h3>
+                <p>Switching, Routing and Wireless Essentials</p>
+                <a href="photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg" class="btn" target="_blank">View Certificate</a>
             </div>
         </div>
     </div>
