@@ -91,8 +91,9 @@
                         <li><a href="#Certificates" class="nav-link hover:text-orange-600 transition-colors">Credentials
                                 <div class="circle hidden"></div>
                             </a></li>
-                        <li><a href="#" class="nav-link hover:text-orange-600 transition-colors"
-                                onclick="confirmRedirect(event)">SkillUp<div class="circle hidden"></div></a></li>
+                        <!-- <li><a href="#" class="nav-link hover:text-orange-600 transition-colors"
+                                onclick="confirmRedirect(event)">SkillUp<div class="circle hidden"></div></a></li> -->
+
                         <li><a href="#contact" class="nav-link hover:text-orange-600 transition-colors">Contact<div
                                     class="circle hidden"></div></a></li>
                     </ul>
@@ -148,9 +149,9 @@
                         <h1 class="text-4xl md:text-5xl font-extrabold my-4 text-gray-900 dark:text-white">I'm <span
                                 class="typedText text-orange-600"></span></h1>
                         <p class="text-lg text-gray-600 dark:text-gray-300">
-                            <strong>Dedicated to building intelligent solutions</strong>, I specialize in Python
-                            programming, machine learning, IoT systems, and robust PHP web development. My focus is on
-                            crafting innovative technologies that solve real-world problems and drive progress.
+
+                            I develop intelligent solutions that simplify processes, solve real-world problems, and
+                            drive meaningful progress for clients, students, and organizations.
                         </p>
                         <div class="mt-8 flex justify-center lg:justify-start gap-4">
                             <button
@@ -189,15 +190,24 @@
                     <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
                         <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Who I Am</h3>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            I am Cyiza Landry Mpayimana, a passionate IT Trainer, Software Engineer, and Innovator. My
-                            mission is to empower the next generation of tech leaders by bridging advanced technology
-                            with practical education, constantly seeking to develop impactful solutions.
-                            <br><br>
-                            I hold an Advanced Diploma in Information Technology from IPRC TUMBA, where I excelled, and
-                            am currently pursuing my Bachelor's of Science in IT at the University of Kigali. My
-                            professional journey is dedicated to transforming complex challenges into effective,
-                            real-world applications and fostering skill development within the tech community.
+                            I am <strong>Cyiza Landry Mpayimana</strong>, an IT Trainer, Software Engineer, and
+                            Innovator.
+                            I enjoy helping students by combining advanced technology with practical learning while
+                            creating
+                            solutions that make a real difference.
                         </p>
+
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                            I hold an <strong>Advanced Diploma in Information Technology</strong> from
+                            <a href="https://www.iprctumba.ac.rw"
+                                class="text-blue-600 hover:underline dark:text-blue-400">IPRC TUMBA</a>,
+                            and I am currently pursuing my <strong>Bachelor of Science in IT</strong> at the
+                            <a href="https://uok.ac.rw"
+                                class="text-blue-600 hover:underline dark:text-blue-400">University of Kigali</a>.
+                            My journey is about turning challenges into practical applications and supporting growth
+                            in the tech community.
+                        </p>
+
                         <div class="mt-6">
                             <button
                                 class="bg-orange-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-orange-700 transition-colors">MORE
@@ -423,7 +433,7 @@
     <script>
     // -- Typed.js Animation --
     var typingEffect = new Typed(".typedText", {
-        strings: ["a Trainer,", "a Software Engineer,", "an Innovator,", "Tech Enthusiast,","AI Expert." ],
+        strings: ["a Trainer,", "a Software Engineer,", "an Innovator,", "Tech Enthusiast,", "AI Expert."],
         loop: true,
         typeSpeed: 100,
         backSpeed: 80,
