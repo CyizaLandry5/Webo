@@ -1,6 +1,4 @@
 
-
-//         header("Location: ../index.php?status=emptyfields#contact");
 <?php
 
 // --- Error Reporting for Development ---
