@@ -163,7 +163,7 @@
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg">
                             <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Software Development</h3>
                             <div class="flex flex-wrap gap-2">
-                                <span class="skill-tag">Python</span><span class="skill-tag">API Development</span><span class="skill-tag">HTML & CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span><span class="skill-tag">JAVA</span><span class="skill-tag">Django</span><span class="skill-tag">Laravel</span><span class="skill-tag">Mobile App Development</span><span class="skill-tag">Full-Stack Web Development</span>
+                                <span class="skill-tag">Python |</span><span class="skill-tag">API Development |</span><span class="skill-tag">HTML, CSS and Tailwind |</span><span class="skill-tag">JavaScript |</span><span class="skill-tag">PHP |</span><span class="skill-tag">JAVA |</span><span class="skill-tag">Django |</span><span class="skill-tag">Laravel |</span><span class="skill-tag">Mobile App Development |</span><span class="skill-tag">Full-Stack Web Development |</span>
                             </div>
                         </div>
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg">
