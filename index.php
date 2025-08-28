@@ -423,7 +423,7 @@
     <script>
     // -- Typed.js Animation --
     var typingEffect = new Typed(".typedText", {
-        strings: ["a Designer", "a Developer", "an Innovator"],
+        strings: ["a Trainer,", "a Software Engineer,", "an Innovator,", "Tech Enthusiast,","AI Expert." ],
         loop: true,
         typeSpeed: 100,
         backSpeed: 80,
