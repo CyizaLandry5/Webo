@@ -16,7 +16,7 @@ Website: www.cyizalandry.com
     <link rel="shortcut icon" href="photos/mine.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/certificates.css">
-    <title>MPAYIMANA CYIZA Landry-IT</title>
+    <title>CYIZA Landry M</title>
 </head>
 
 <body>
@@ -94,7 +94,7 @@ Website: www.cyizalandry.com
                         <p>I'm <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p><span>Dedicated to building intelligent solutions</span>, I specialize in Python programming, machine
+                        <p><Strong>Dedicated to building intelligent solutions</Strong>, I specialize in Python programming, machine
                             learning, IoT systems, and robust PHP web development. My focus is on crafting innovative
                             technologies that solve real-world problems and drive progress.</p>
                     </div>
