@@ -94,7 +94,7 @@ Website: www.cyizalandry.com
                         <p>I'm <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Dedicated to building intelligent solutions, I specialize in Python programming, machine
+                        <p><span>Dedicated to building intelligent solutions</span>, I specialize in Python programming, machine
                             learning, IoT systems, and robust PHP web development. My focus is on crafting innovative
                             technologies that solve real-world problems and drive progress.</p>
                     </div>
