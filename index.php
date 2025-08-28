@@ -137,9 +137,11 @@ Website: www.cyizalandry.com
                                 I am Cyiza Landry Mpayimana, a passionate IT Trainer, Software Engineer, and Innovator.
                                 My mission is to empower the next generation of tech leaders by bridging advanced
                                 technology with practical education, constantly seeking to develop impactful solutions.
+                                
                                 I hold an Advanced Diploma in Information Technology from IPRC TUMBA, where I excelled,
-                                and am currently pursuing my Bachelor's of Science in IT at the University of Kigali. My
-                                professional journey is dedicated to transforming complex challenges into effective,
+                                and am currently pursuing my Bachelor's of Science in IT at the University of Kigali. 
+                                
+                                My professional journey is dedicated to transforming complex challenges into effective,
                                 real-world applications and fostering skill development within the tech community.
                             </p>
 
