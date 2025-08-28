@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- 
 ======================================================
-This code is developed by MPAYIMANA CYIZA Landry
+This code is developed by IT MPAYIMANA CYIZA Landry
 Website: www.cyizalandry.com
 ======================================================
 -->
