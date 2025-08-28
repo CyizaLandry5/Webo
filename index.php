@@ -161,10 +161,14 @@
                                 onclick="confirmViewCV()">Download CV <i class="uil uil-file-alt"></i></button>
                         </div>
                         <div class="mt-8 flex justify-center lg:justify-start space-x-6">
-                            <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-instagram"></i></a>
-                            <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-linkedin-alt"></i></a>
-                            <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-dribbble"></i></a>
-                            <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-github-alt"></i></a>
+                            <a href="https://www.instagram.com/landry_cyiza/" class="text-2xl hover:text-orange-600"><i
+                                    class="uil uil-instagram"></i></a>
+                            <a href="www.linkedin.com/in/landry-cyiza-mpayimana-595a85262"
+                                class="text-2xl hover:text-orange-600"><i class="uil uil-linkedin-alt"></i></a>
+                            <a href="https://x.com/cyizalandry" class="text-2xl hover:text-orange-600"><i
+                                    class="uil uil-twitter"></i></a>
+                            <a href="https://github.com/CyizaLandry5" class="text-2xl hover:text-orange-600"><i
+                                    class="uil uil-github-alt"></i></a>
                         </div>
                     </div>
                     <div class="flex justify-center">
@@ -382,10 +386,14 @@
                     <li><a href="#contact" class="hover:text-orange-600">Contact</a></li>
                 </ul>
                 <div class="flex justify-center space-x-6 mb-6">
-                    <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-instagram"></i></a>
-                    <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-linkedin-alt"></i></a>
-                    <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-dribbble"></i></a>
-                    <a href="#" class="text-2xl hover:text-orange-600"><i class="uil uil-github-alt"></i></a>
+                    <a href="https://www.instagram.com/landry_cyiza/" class="text-2xl hover:text-orange-600"><i
+                            class="uil uil-instagram"></i></a>
+                    <a href="www.linkedin.com/in/landry-cyiza-mpayimana-595a85262"
+                        class="text-2xl hover:text-orange-600"><i class="uil uil-linkedin-alt"></i></a>
+                    <a href="https://x.com/cyizalandry" class="text-2xl hover:text-orange-600"><i
+                            class="uil uil-twitter"></i></a>
+                    <a href="https://github.com/CyizaLandry5" class="text-2xl hover:text-orange-600"><i
+                            class="uil uil-github-alt"></i></a>
                 </div>
                 <p class="text-gray-500 dark:text-gray-400">Copyright &copy; <a href="#home"
                         class="text-orange-600 font-semibold">MPAYIMANA CYIZA Landry</a> - All rights reserved</p>
