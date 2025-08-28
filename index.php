@@ -199,7 +199,7 @@
 
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                             I hold an <strong>Advanced Diploma in Information Technology</strong> from
-                            <a href="https://www.iprctumba.ac.rw"
+                            <a href="https://www.iprctumba.rp.ac.rw/"
                                 class="text-blue-600 hover:underline dark:text-blue-400">IPRC TUMBA</a>,
                             and I am currently pursuing my <strong>Bachelor of Science in IT</strong> at the
                             <a href="https://uok.ac.rw"
