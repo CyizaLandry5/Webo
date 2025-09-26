@@ -297,7 +297,7 @@
                         ["img" => "photos/certificates/English_for_IT_2_certificate.jpg", "title" => "English for IT", "desc" => "From OPEN EDG."],
                         ["img" => "photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg", "title" => "Switching Routing & Wireless", "desc" => "From Networking Academy."],
                         ["img" => "photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg", "title" => "Networks Introduction", "desc" => "From Networking Academy."],
-                        ["img" => "photos/certificates/Linux_Essentials", "title" => "Linux Essentials", "desc" => "From University of Kigali and NDG."],
+                        ["img" => "photos/certificates/Linux_Essentials.jpg", "title" => "Linux Essentials", "desc" => "From University of Kigali and NDG."],
                     ];
                     foreach ($certificates as $cert):
                     ?>
