@@ -296,7 +296,7 @@
                         ["img" => "photos/certificates/SCAD-1/SCAD 1_page-0001.jpg", "title" => "Soft Skills", "desc" => "Soft Skills and Career Development"],
                         ["img" => "photos/certificates/English_for_IT_2_certificate.jpg", "title" => "English for IT", "desc" => "English For IT 2"],
                         ["img" => "photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg", "title" => "Networking", "desc" => "Switching, Routing and Wireless Essentials"],
-                        ["img" => "photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg", "title" => "Networking", "desc" => "Introduction to Networks"],
+                        ["img" => "photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg", "title" => "Networks Introduction", "desc" => "Introduction to Networks"],
                     ];
                     foreach ($certificates as $cert):
                     ?>
