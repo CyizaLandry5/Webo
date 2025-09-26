@@ -291,12 +291,12 @@
                     <?php
                     $certificates = [
                         ["img" => "photos/certificates/Programming_Essentials_in_Python_certificate.jpg", "title" => "Python Programming Essentials", "desc" => "From Python Institute."],
-                        ["img" => "photos/certificates/Cybersecurity_Essentials_certificate.jpg", "title" => "Cybersecurity Essentials", "desc" => "Cybersecurity Essentials."],
-                        ["img" => "photos/certificates/Network_Security_certificate.jpg", "title" => "Network Security", "desc" => "Network Security."],
-                        ["img" => "photos/certificates/SCAD-1/SCAD 1_page-0001.jpg", "title" => "Soft Skills and Career Development", "desc" => "Soft Skills and Career Development"],
-                        ["img" => "photos/certificates/English_for_IT_2_certificate.jpg", "title" => "English for IT", "desc" => "English For IT 2"],
-                        ["img" => "photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg", "title" => "Switching Routing & Wireless", "desc" => "Switching, Routing and Wireless Essentials"],
-                        ["img" => "photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg", "title" => "Networks Introduction", "desc" => "Introduction to Networks"],
+                        ["img" => "photos/certificates/Cybersecurity_Essentials_certificate.jpg", "title" => "Cybersecurity Essentials", "desc" => "From Networking Academy."],
+                        ["img" => "photos/certificates/Network_Security_certificate.jpg", "title" => "Network Security", "desc" => "From Network Academy."],
+                        ["img" => "photos/certificates/SCAD-1/SCAD 1_page-0001.jpg", "title" => "Soft Skills and Career Development", "desc" => "From KEPLER University and IPRC TUMBA."],
+                        ["img" => "photos/certificates/English_for_IT_2_certificate.jpg", "title" => "English for IT", "desc" => "From OPEN EDG."],
+                        ["img" => "photos/certificates/CCNA_Switching_Routing_and_Wireless_Essentials_certificate.jpg", "title" => "Switching Routing & Wireless", "desc" => "From Networking Academy."],
+                        ["img" => "photos/certificates/CCNA_Introduction_to_Networks_certificate.jpg", "title" => "Networks Introduction", "desc" => "From Networking Academy."],
                     ];
                     foreach ($certificates as $cert):
                     ?>
