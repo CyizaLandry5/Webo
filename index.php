@@ -290,7 +290,7 @@
                     <!-- Certificate Items -->
                     <?php
                     $certificates = [
-                        ["img" => "photos/certificates/Programming_Essentials_in_Python_certificate.jpg", "title" => "Python Programming", "desc" => "Programming Essentials in Python certificate"],
+                        ["img" => "photos/certificates/Programming_Essentials_in_Python_certificate.jpg", "title" => "Python Programming Essentials", "desc" => "From Python Institute."],
                         ["img" => "photos/certificates/Cybersecurity_Essentials_certificate.jpg", "title" => "Cybersecurity Essentials", "desc" => "Cybersecurity Essentials."],
                         ["img" => "photos/certificates/Network_Security_certificate.jpg", "title" => "Network Security", "desc" => "Network Security."],
                         ["img" => "photos/certificates/SCAD-1/SCAD 1_page-0001.jpg", "title" => "Soft Skills and Career Development", "desc" => "Soft Skills and Career Development"],
