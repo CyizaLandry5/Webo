@@ -290,6 +290,7 @@
                     <!-- Certificate Items -->
                     <?php
                     $certificates = [
+                        ["img" => "photos/certificates/Nesa_MARKING_CERTIFICATE.jpg", "title" => "National Exam Marking Certificate", "desc" => "From Republic of Rwanda through NESA"],
                         ["img" => "photos/certificates/Linux_Essentials.jpg", "title" => "Linux Essentials", "desc" => "From University of Kigali."],
                         ["img" => "photos/certificates/Programming_Essentials_in_Python_certificate.jpg", "title" => "Python Programming Essentials", "desc" => "From Python Institute and OPEN EDG."],
                         ["img" => "photos/certificates/Cybersecurity_Essentials_certificate.jpg", "title" => "Cybersecurity Essentials", "desc" => "From Networking Academy."],
