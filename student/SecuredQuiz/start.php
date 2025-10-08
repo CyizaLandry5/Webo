@@ -50,15 +50,18 @@ $duration = $quiz['duration'] * 60; // seconds
   <script>
     let timeLeft = <?php echo $duration; ?>;
 
-    // Custom nice alert
-    function showPopup(message, type = "warning") {
+    // ✅ Nice alert box
+    function showPopup(message) {
       const popup = document.createElement("div");
-      popup.className = `fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50`;
+      popup.className = "fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50";
       popup.innerHTML = `
         <div class="bg-white p-6 rounded-xl shadow-2xl w-80 text-center animate-fadeIn">
-          <h2 class="text-xl font-semibold mb-3 text-${type === "error" ? "red" : "yellow"}-600">${type === "error" ? "Alert!" : "Warning!"}</h2>
+          <h2 class="text-xl font-semibold mb-3 text-yellow-600">Warning!</h2>
           <p class="text-gray-700 mb-5">${message}</p>
-          <button id="okBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">OK</button>
+          <button id="okBtn" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+            OK
+          </button>
         </div>`;
       document.body.appendChild(popup);
       document.getElementById("okBtn").onclick = () => popup.remove();
@@ -93,31 +96,24 @@ $duration = $quiz['duration'] * 60; // seconds
     function logCheating(reason) {
       fetch("log_cheat.php?topic=<?php echo $topic; ?>", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: "reason=" + encodeURIComponent(reason)
       });
     }
 
-    function warnOnFocusLoss() {
+    function warnOnTabSwitch() {
       document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
-          showPopup("Do not switch tabs or minimize the window during the quiz! <br><strong>NTIWONGERE KABISA</strong>");
+          showPopup("Warning: Do not switch tabs or minimize the window during the quiz!<br><strong>NTIWONGERE KABISA</strong>");
           logCheating("Tab switch or minimized");
         }
-      });
-
-      window.addEventListener("blur", () => {
-        showPopup("You switched away from the quiz window.<br><strong>NTIWONGERE GU CLICKA KU RUHANDE!!</strong>");
-        logCheating("Window blur");
       });
     }
 
     window.onload = () => {
       requestFullscreen();
       startTimer();
-      warnOnFocusLoss();
+      warnOnTabSwitch();
     };
   </script>
 
@@ -127,7 +123,7 @@ $duration = $quiz['duration'] * 60; // seconds
       to {opacity: 1; transform: scale(1);}
     }
     .animate-fadeIn {
-      animation: fadeIn 0.2s ease-in-out;
+      animation: fadeIn 0.25s ease-in-out;
     }
   </style>
 </head>
