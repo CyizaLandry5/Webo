@@ -11,8 +11,9 @@
     <h1>Please Select a Quiz</h1>
     <ul>
       <center><h4>L5 NIT</h4></center>
-      <li><a href="start.php?topic=python1">L5 NIT Prepare python environment 1</a></li>
-      <!-- <li><a href="start.php?topic=python2">L5 NIT Write basic python program 2</a></li>
+      
+      <!--<li><a href="start.php?topic=python1">L5 NIT Prepare python environment 1</a></li>
+       <li><a href="start.php?topic=python2">L5 NIT Write basic python program 2</a></li>
       <li><a href="start.php?topic=python3">L5 NIT Apply object driven in python 3</a></li>
 
       <li><a href="start.php?topic=ml1">L5 NIT Apply data Pre-processing 1</a></li>
