@@ -51,7 +51,7 @@ $quizzes = [
     ],
 
   "etepython3" => [
-    "title" => "ETE-Apply object driven in python",
+    "title" => "COMPUTER SKILLS ONLINE FORMATIVE ASSESSMENT",
     "duration" => 50,
     "form_url" => "https://forms.gle/8E8LVp9TktHpYojM8"
     ]];
