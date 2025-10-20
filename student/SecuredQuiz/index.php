@@ -27,8 +27,7 @@
       <li><a href="start.php?topic=etepython3">L5 ETE Apply object driven in python 3</a></li> -->
 
       <center><h4>GS MARIE REINE RWAZA</h4></center>
-      
-      <li><a href="start.php?topic=python1">L4 COMPUTER SKILLS FORMATIVE ASSESSMENT</a></li>
+            <li><a href="start.php?topic=cskills">L4 COMPUTER SKILLS FORMATIVE ASSESSMENT</a></li>
       
     </ul>
   </div>

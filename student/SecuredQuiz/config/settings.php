@@ -43,10 +43,19 @@ $quizzes = [
     "duration" => 40,
     "form_url" => "https://forms.gle/biehQNZpUwHL53a39"
     ],
+
+    "cskills" => [
+    "title" => "ETE-Write basic python program",
+    "duration" => 50,
+    "form_url" => "https://tinyurl.com/5n8663wd"
+    ],
+
   "etepython3" => [
     "title" => "ETE-Apply object driven in python",
     "duration" => 50,
     "form_url" => "https://forms.gle/8E8LVp9TktHpYojM8"
     ]];
+
+    
 
 ?>
