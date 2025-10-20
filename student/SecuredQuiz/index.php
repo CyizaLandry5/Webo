@@ -10,7 +10,7 @@
   <div class="container">
     <h1>Please Select a Quiz</h1>
     <ul>
-      <h3>There is no active quiz at this moment! Please come back later</h3>
+      <!-- <h3>There is no active quiz at this moment! Please come back later</h3> -->
       <!--<center><h4>L5 NIT</h4></center>
       
       <!--<li><a href="start.php?topic=python1">L5 NIT Prepare python environment 1</a></li>
