@@ -19,7 +19,7 @@
       Your time has ended. If you haven’t submitted the form yet, please do so now before closing this page.
     </p>
     <p class="font-medium text-gray-800 mt-4">
-      <strong>Thank you for taking the quiz!</strong>
+      <strong>Thank you for taking the quiz </strong>
     </p>
     <a href="index.php" 
        class="inline-block mt-6 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
