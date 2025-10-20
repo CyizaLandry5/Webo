@@ -45,13 +45,13 @@ $quizzes = [
     ],
 
     "cskills" => [
-    "title" => "ETE-Write basic python program",
+    "title" => "COMPUTER SKILLS ONLINE FORMATIVE ASSESSMENT",
     "duration" => 50,
     "form_url" => "https://tinyurl.com/5n8663wd"
     ],
 
   "etepython3" => [
-    "title" => "COMPUTER SKILLS ONLINE FORMATIVE ASSESSMENT",
+    "title" => "ETE-Apply object driven in python",
     "duration" => 50,
     "form_url" => "https://forms.gle/8E8LVp9TktHpYojM8"
     ]];
