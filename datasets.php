@@ -27,7 +27,7 @@ $checklistFile = "checklist.pdf";
         <a href="<?php echo $datasetFile; ?>" 
            download
            class="inline-flex items-center px-4 py-2 mt-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
-          📊 Download Dataset (CSV)
+          Download Dataset
         </a>
       </div>
 
@@ -39,7 +39,7 @@ $checklistFile = "checklist.pdf";
         <a href="<?php echo $checklistFile; ?>" 
            target="_blank"
            class="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition">
-          ✅ View Checklist (PDF)
+          View Checklist
         </a>
       </div>
     </div>
