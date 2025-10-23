@@ -105,7 +105,7 @@ $checklistFile = "?view=checklist";
           Download Dataset (CSV)
         </a>
         <p class="text-sm text-gray-500 mt-2">
-          Total downloads (unique/hour): <strong><?php echo $totalDataset; ?></strong>
+          Total downloads : <strong><?php echo $totalDataset; ?></strong>
         </p>
       </div>
 
@@ -119,7 +119,7 @@ $checklistFile = "?view=checklist";
           View Checklist (PDF)
         </a>
         <p class="text-sm text-gray-500 mt-2">
-          Total checklist views (unique/hour): <strong><?php echo $totalChecklist; ?></strong>
+          Total checklist views : <strong><?php echo $totalChecklist; ?></strong>
         </p>
       </div>
     </div>
