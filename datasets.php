@@ -1,6 +1,24 @@
 <?php
-// dataset and checklist file paths
-$datasetFile = "dataset_mid_term.csv";
+// --- File download handler ---
+if (isset($_GET['download']) && $_GET['download'] === 'dataset') {
+    $file = 'dataset_mid_term.csv';
+    if (file_exists($file)) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: text/csv');
+        header('Content-Disposition: attachment; filename="' . basename($file) . '"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($file));
+        readfile($file);
+        exit;
+    } else {
+        echo "Dataset file not found.";
+        exit;
+    }
+}
+
+$datasetFile = "?download=dataset";
 $checklistFile = "checklist.pdf";
 ?>
 
@@ -25,9 +43,8 @@ $checklistFile = "checklist.pdf";
           Please download the dataset to use tomorrow:
         </p>
         <a href="<?php echo $datasetFile; ?>" 
-           download
            class="inline-flex items-center px-4 py-2 mt-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
-          Download Dataset
+          📊 Download Dataset (CSV)
         </a>
       </div>
 
@@ -39,7 +56,7 @@ $checklistFile = "checklist.pdf";
         <a href="<?php echo $checklistFile; ?>" 
            target="_blank"
            class="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition">
-          View Checklist
+          ✅ View Checklist (PDF)
         </a>
       </div>
     </div>
