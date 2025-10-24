@@ -129,7 +129,7 @@ $checklistFile = "?view=checklist";
           Please submit your venv (zipped) through this link
         </p>
         <!-- Embedded Google Form -->
-        <iframe src="https://forms.gle/xSHKS6p4mbkxsHnw7/viewform?embedded=false" 
+        <!-- <iframe src="https://forms.gle/xSHKS6p4mbkxsHnw7/viewform?embedded=false"  -->
                 width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
     </div>
