@@ -124,7 +124,7 @@ $marksFile = "?view=marks";
           Download Dataset (CSV)
         </a>
         <p class="text-sm text-gray-500 mt-2">
-          Total downloads : <strong><?php echo $totalDataset; ?></strong>
+          <!-- Total downloads : <strong><?php echo $totalDataset; ?></strong> -->
         </p>
       </div>
 
@@ -136,7 +136,7 @@ $marksFile = "?view=marks";
           View Checklist (PDF)
         </a>
         <p class="text-sm text-gray-500 mt-2">
-          Total checklist views : <strong><?php echo $totalChecklist; ?></strong>
+          <!-- Total checklist views : <strong><?php echo $totalChecklist; ?></strong> -->
         </p>
       </div>
 
