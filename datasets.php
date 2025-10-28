@@ -124,14 +124,7 @@ $checklistFile = "?view=checklist";
       </div>
 
       <!-- Google Form Submission -->
-      <div class="border border-gray-300 rounded-xl p-5 shadow-sm col-span-2">
-        <p class="text-gray-700 mb-2">
-          Please submit your venv (zipped) through this link
-        </p>
-        <!-- Embedded Google Form -->
-        <!-- <iframe src="https://forms.gle/xSHKS6p4mbkxsHnw7/viewform?embedded=false"  -->
-                width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-      </div>
+      
     </div>
   </div>
 
