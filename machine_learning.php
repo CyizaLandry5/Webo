@@ -12,36 +12,34 @@ function log_action($type) {
         $lines = file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         foreach ($lines as $line) {
             list($logIp, $logType, $logTime) = explode(',', $line);
-            // Keep only logs from the last hour
             if (($time - (int)$logTime) < $oneHour) {
                 $logs[] = [$logIp, $logType, $logTime];
             }
         }
     }
 
-    // Check if this IP already logged this action within the last hour
+    // Prevent duplicate within 1 hour
     foreach ($logs as $entry) {
         if ($entry[0] === $ip && $entry[1] === $type && ($time - (int)$entry[2]) < $oneHour) {
-            return false; // Already counted within the hour
+            return false;
         }
     }
 
-    // Log new entry
+    // Add new log
     $logs[] = [$ip, $type, $time];
     $fp = fopen($logFile, 'w');
     foreach ($logs as $entry) {
         fputcsv($fp, $entry);
     }
     fclose($fp);
-
     return true;
 }
 
-// === FILE DOWNLOAD HANDLER ===
+// === FILE HANDLERS ===
 if (isset($_GET['download']) && $_GET['download'] === 'dataset') {
     $file = 'dataset_mid_term.csv';
     if (file_exists($file)) {
-        log_action('dataset'); // Log dataset download
+        log_action('dataset');
         header('Content-Description: File Transfer');
         header('Content-Type: text/csv');
         header('Content-Disposition: attachment; filename="' . basename($file) . '"');
@@ -57,27 +55,37 @@ if (isset($_GET['download']) && $_GET['download'] === 'dataset') {
     }
 }
 
-// === CHECKLIST VIEW HANDLER ===
 if (isset($_GET['view']) && $_GET['view'] === 'checklist') {
-    log_action('checklist'); // Log checklist view
+    log_action('checklist');
     header("Location: checklist.pdf");
+    exit;
+}
+
+// New: Marks file download/view handler
+if (isset($_GET['view']) && $_GET['view'] === 'marks') {
+    log_action('marks');
+    header("Location: marks.pdf");
     exit;
 }
 
 // === Count totals ===
 $totalDataset = 0;
 $totalChecklist = 0;
+$totalMarks = 0;
+
 if (file_exists('download_log.csv')) {
     $lines = file('download_log.csv', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
         list($ip, $type, $t) = explode(',', $line);
         if ($type === 'dataset') $totalDataset++;
         if ($type === 'checklist') $totalChecklist++;
+        if ($type === 'marks') $totalMarks++;
     }
 }
 
 $datasetFile = "?download=dataset";
 $checklistFile = "?view=checklist";
+$marksFile = "?view=marks";
 ?>
 
 <!DOCTYPE html>
@@ -92,14 +100,12 @@ $checklistFile = "?view=checklist";
 
   <div class="bg-white shadow-xl rounded-2xl p-8 max-w-3xl w-full border border-gray-200">
     <h1 class="text-2xl font-semibold text-gray-800 mb-4">Dear Students,</h1>
-    <p class="text-gray-700 mb-8">Welcome.</p>
+    <p class="text-gray-700 mb-8">Welcome to your Machine Learning course page. Please find all resources below.</p>
 
     <div class="grid md:grid-cols-2 gap-6">
       <!-- Dataset -->
       <div class="border border-gray-300 rounded-xl p-5 shadow-sm">
-        <p class="text-gray-700 mb-2">
-          Please download the dataset to use tomorrow:
-        </p>
+        <p class="text-gray-700 mb-2">Please download the dataset to use tomorrow:</p>
         <a href="<?php echo $datasetFile; ?>" 
            class="inline-flex items-center px-4 py-2 mt-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
           Download Dataset (CSV)
@@ -111,9 +117,7 @@ $checklistFile = "?view=checklist";
 
       <!-- Checklist -->
       <div class="border border-gray-300 rounded-xl p-5 shadow-sm">
-        <p class="text-gray-700 mb-2">
-          Please read the checklist that will be used tomorrow:
-        </p>
+        <p class="text-gray-700 mb-2">Please read the checklist that will be used tomorrow:</p>
         <a href="<?php echo $checklistFile; ?>" 
            class="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition">
           View Checklist (PDF)
@@ -123,8 +127,17 @@ $checklistFile = "?view=checklist";
         </p>
       </div>
 
-      <!-- Google Form Submission -->
-      
+      <!-- Marks -->
+      <div class="border border-gray-300 rounded-xl p-5 shadow-sm md:col-span-2">
+        <p class="text-gray-700 mb-2">You can view your marks below:</p>
+        <a href="<?php echo $marksFile; ?>" 
+           class="inline-flex items-center px-4 py-2 mt-2 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition">
+          View Marks (PDF)
+        </a>
+        <p class="text-sm text-gray-500 mt-2">
+          Total marks views : <strong><?php echo $totalMarks; ?></strong>
+        </p>
+      </div>
     </div>
   </div>
 
