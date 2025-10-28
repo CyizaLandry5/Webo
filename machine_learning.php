@@ -148,7 +148,7 @@ $marksFile = "?view=marks";
           View Marks (PDF)
         </a>
         <p class="text-sm text-gray-500 mt-2">
-          Total marks views : <strong><?php echo $totalMarks; ?></strong>
+          <!-- Total marks views : <strong><?php echo $totalMarks; ?></strong> -->
         </p>
       </div>
     </div>
