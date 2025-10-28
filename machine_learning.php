@@ -3,7 +3,7 @@
 function log_action($type) {
     $ip = $_SERVER['REMOTE_ADDR'];
     $time = time();
-    $logFile = 'download_log.csv';
+    $logFile = __DIR__ . '/downloads/download_log.csv'; // path to downloads folder
     $oneHour = 3600;
 
     // Load existing logs
@@ -37,7 +37,7 @@ function log_action($type) {
 
 // === FILE HANDLERS ===
 if (isset($_GET['download']) && $_GET['download'] === 'dataset') {
-    $file = 'dataset_mid_term.csv';
+    $file = __DIR__ . '/downloads/dataset_mid_term.csv';
     if (file_exists($file)) {
         log_action('dataset');
         header('Content-Description: File Transfer');
@@ -56,16 +56,28 @@ if (isset($_GET['download']) && $_GET['download'] === 'dataset') {
 }
 
 if (isset($_GET['view']) && $_GET['view'] === 'checklist') {
-    log_action('checklist');
-    header("Location: checklist.pdf");
-    exit;
+    $file = __DIR__ . '/downloads/checklist.pdf';
+    if (file_exists($file)) {
+        log_action('checklist');
+        header("Location: downloads/checklist.pdf");
+        exit;
+    } else {
+        echo "Checklist file not found.";
+        exit;
+    }
 }
 
-// New: Marks file download/view handler
+// Marks handler
 if (isset($_GET['view']) && $_GET['view'] === 'marks') {
-    log_action('marks');
-    header("Location: marks.pdf");
-    exit;
+    $file = __DIR__ . '/downloads/marks.pdf';
+    if (file_exists($file)) {
+        log_action('marks');
+        header("Location: downloads/marks.pdf");
+        exit;
+    } else {
+        echo "Marks file not found.";
+        exit;
+    }
 }
 
 // === Count totals ===
@@ -73,8 +85,9 @@ $totalDataset = 0;
 $totalChecklist = 0;
 $totalMarks = 0;
 
-if (file_exists('download_log.csv')) {
-    $lines = file('download_log.csv', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$logFile = __DIR__ . '/downloads/download_log.csv';
+if (file_exists($logFile)) {
+    $lines = file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
         list($ip, $type, $t) = explode(',', $line);
         if ($type === 'dataset') $totalDataset++;
@@ -105,7 +118,7 @@ $marksFile = "?view=marks";
     <div class="grid md:grid-cols-2 gap-6">
       <!-- Dataset -->
       <div class="border border-gray-300 rounded-xl p-5 shadow-sm">
-        <p class="text-gray-700 mb-2">Please download the dataset to use tomorrow:</p>
+        <p class="text-gray-700 mb-2">Please download the dataset to use:</p>
         <a href="<?php echo $datasetFile; ?>" 
            class="inline-flex items-center px-4 py-2 mt-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
           Download Dataset (CSV)
@@ -117,7 +130,7 @@ $marksFile = "?view=marks";
 
       <!-- Checklist -->
       <div class="border border-gray-300 rounded-xl p-5 shadow-sm">
-        <p class="text-gray-700 mb-2">Please read the checklist that will be used tomorrow:</p>
+        <p class="text-gray-700 mb-2">Please read the checklist that will be used:</p>
         <a href="<?php echo $checklistFile; ?>" 
            class="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition">
           View Checklist (PDF)
