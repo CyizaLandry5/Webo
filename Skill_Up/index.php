@@ -1,4 +1,21 @@
-<?php include 'includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkillUp Portal</title>
+</head>
+<body>
+  <h2>Welcome to SkillUp Learning Portal</h2>
+  <p>Click below to start your SkillUp journey.</p>
+  
+  <form action="choose_class.php" method="GET" onsubmit="return confirm('Are you ready to SkillUp?');">
+    <button type="submit">🚀 SkillUp Now</button>
+  </form>
+</body>
+</html>
+
+
+<!-- ?php include 'includes/header.php'; ?>
 <h2>Select Your Class</h2>
 
 <div class="container">
@@ -21,4 +38,5 @@
     </section>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+?php include 'includes/footer.php'; ?>
+ -->
