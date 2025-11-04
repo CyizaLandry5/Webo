@@ -1,6 +1,7 @@
-  <hr>
-  <footer>
-    <p>&copy; <?php echo date('Y'); ?> SkillUp System - Powered by CYIZA HUB</p>
-  </footer>
+</main>
+<footer>
+<hr>
+<p>&copy; <?php echo date('Y'); ?> SkillUp</p>
+</footer>
 </body>
 </html>
