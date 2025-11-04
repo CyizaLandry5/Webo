@@ -1,21 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecting class</title>
-</head>
-<body>
-    <P>NIT-NETWORKING AND INTERNET TECHNOLOGIES</P>
-    
-    <h4>L3 NIT</h4>
-    <h4>L4 NIT</h4>
-    <h4>L5 NIT</h4>
+<?php include 'includes/header.php'; ?>
+<h2>Select Your Class</h2>
 
-    <P>ETE-ELECTRONNICS AND TELECOMUNICATION</P>
-    
-    <h4>L3 ETE</h4>
-    <h4>L4 ETE</h4>
-    <h4>L5 ETE</h4>
-</body>
-</html>
+<div class="container">
+    <section>
+        <h3>NIT - Networking and Internet Technologies</h3>
+        <ul>
+            <li><a href="choose_module.php?class=L3_NIT">L3 NIT</a></li>
+            <li><a href="choose_module.php?class=L4_NIT">L4 NIT</a></li>
+            <li><a href="choose_module.php?class=L5_NIT">L5 NIT</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>ETE - Electronics and Telecommunication</h3>
+        <ul>
+            <li><a href="choose_module.php?class=L3_ETE">L3 ET</a></li>
+            <li><a href="choose_module.php?class=L4_ETE">L4 ETE</a></li>
+            <li><a href="choose_module.php?class=L5_ETE">L5 ETE</a></li>
+        </ul>
+    </section>
+</div>
+
+<?php include 'includes/footer.php'; ?>
