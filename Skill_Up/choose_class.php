@@ -24,6 +24,7 @@ if (!$result) {
 </head>
 <body>
   <h2>Please Select Your Class</h2>
+  <button><a href="index.php">Back</a></button>
 
   <?php if ($result->num_rows > 0): ?>
     <ul>
