@@ -31,7 +31,7 @@ if (!$result) {
   </style>
 </head>
 <body>
-  <h2>Step 2: Choose Your Class</h2>
+  <h2>Please Select Your Class</h2>
 
   <?php if ($result->num_rows > 0): ?>
     <ul>
