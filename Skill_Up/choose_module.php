@@ -1,6 +1,6 @@
 <?php
 // Include your database connection file
-include'/includes/db.php';
+include'includes/db.php';
 
 // Check if a class name was passed in the URL
 if (!isset($_GET['class'])) {
