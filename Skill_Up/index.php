@@ -9,8 +9,9 @@
   <p>Click below to start your SkillUp journey.</p>
   
   <form action="choose_class.php" method="GET" onsubmit="return confirm('Are you ready to SkillUp?');">
-    <button type="submit">🚀 SkillUp Now</button>
+    <button type="submit">SkillUp Now</button>
   </form>
+  <footer>Proudly made by CYIZA HUB</footer>
 </body>
 </html>
 
