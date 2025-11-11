@@ -9,7 +9,7 @@ $result = $conn->query("SELECT * FROM classes ORDER BY id ASC");
   <title>Select Your Class</title>
 </head>
 <body>
-  <h2>Step 2: Choose Your Class</h2>
+  <h2>Please Select Your Class</h2>
   <ul>
     <?php while($row = $result->fetch_assoc()): ?>
       <li>
