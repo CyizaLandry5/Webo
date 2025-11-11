@@ -20,15 +20,7 @@ if (!$result) {
 <head>
   <meta charset="UTF-8">
   <title>Select Your Class</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
-    h2 { color: #333; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 10px 0; }
-    a { text-decoration: none; color: #007BFF; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    .no-classes { color: #cc0000; font-style: italic; }
-  </style>
+  
 </head>
 <body>
   <h2>Please Select Your Class</h2>
@@ -48,7 +40,7 @@ if (!$result) {
       <?php endwhile; ?>
     </ul>
   <?php else: ?>
-    <p class="no-classes">No classes found in the database.</p>
+    <p>No classes found in the database.</p>
   <?php endif; ?>
 </body>
 </html>
